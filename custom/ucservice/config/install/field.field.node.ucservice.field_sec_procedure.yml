@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sec_procedure
+    - node.type.ucservice
+  module:
+    - options
+id: node.ucservice.field_sec_procedure
+field_name: field_sec_procedure
+entity_type: node
+bundle: ucservice
+label: 'Has the local authority in place documents on measures, practices or procedures on ICT security?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_env_co2
+    - node.type.ucservice
+  module:
+    - options
+id: node.ucservice.field_env_co2
+field_name: field_env_co2
+entity_type: node
+bundle: ucservice
+label: 'Does the authority measure the volume of CO2 saved by the citizens when using an online service compared to the offline one?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

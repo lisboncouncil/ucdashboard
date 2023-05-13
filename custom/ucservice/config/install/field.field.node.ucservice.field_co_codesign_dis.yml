@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_co_codesign_dis
+    - node.type.ucservice
+  module:
+    - options
+id: node.ucservice.field_co_codesign_dis
+field_name: field_co_codesign_dis
+entity_type: node
+bundle: ucservice
+label: 'Does the local authority habitually use specific service co-design / user research sessions with disadvantaged communities (e.g. minorities, elderly, disabled people, etc.)?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

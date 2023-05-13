@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sup_auth_app
+    - node.type.ucservice
+  module:
+    - options
+id: node.ucservice.field_sup_auth_app
+field_name: field_sup_auth_app
+entity_type: node
+bundle: ucservice
+label: 'Does the local authority have a dedicated app that is downloaded by more than 20% of the population?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

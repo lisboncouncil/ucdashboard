@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_co_userresearch
+    - node.type.ucservice
+  module:
+    - options
+id: node.ucservice.field_co_userresearch
+field_name: field_co_userresearch
+entity_type: node
+bundle: ucservice
+label: 'Does the local authority habitually carry out users'' research sessions on a regular basis (at least once a year) AFTER the launch of a service?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sup_auth_proactive
+    - node.type.ucservice
+  module:
+    - options
+id: node.ucservice.field_sup_auth_proactive
+field_name: field_sup_auth_proactive
+entity_type: node
+bundle: ucservice
+label: 'Does the local authority offer at least one proactive service, where users are automatically signed up for a service based on the government-held data?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

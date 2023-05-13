@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_st_localauth_digitstrategy
+    - node.type.ucservice
+  module:
+    - options
+id: node.ucservice.field_st_localauth_digitstrategy
+field_name: field_st_localauth_digitstrategy
+entity_type: node
+bundle: ucservice
+label: 'Does the local authority have a digital strategy less than three years old?'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

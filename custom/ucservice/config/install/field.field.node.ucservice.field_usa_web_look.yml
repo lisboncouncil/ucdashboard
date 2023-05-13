@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_usa_web_look
+    - node.type.ucservice
+  module:
+    - options
+id: node.ucservice.field_usa_web_look
+field_name: field_usa_web_look
+entity_type: node
+bundle: ucservice
+label: 'Do all the websites or websites sections of the local authority have consistent design and look&feel?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

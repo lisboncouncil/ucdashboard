@@ -1,0 +1,22 @@
+name: UCService
+description: 'Provides UCService content type and related configuration. Services for Usercentricities Dashboard'
+type: module
+package: UCCs
+core_version_requirement: ^9 | ^10
+dependencies:
+  - 'csv_serialization:csv_serialization'
+  - 'drupal:field'
+  - 'drupal:menu_ui'
+  - 'drupal:node'
+  - 'drupal:options'
+  - 'drupal:path'
+  - 'drupal:rest'
+  - 'drupal:serialization'
+  - 'drupal:user'
+  - 'drupal:views'
+  - 'field_group:field_group'
+  - 'field_label_long_text:field_label_long_text'
+  - 'ucservice:ucservice'
+  - 'views_data_export:views_data_export'
+  - 'workbench_moderation:workbench_moderation'
+version: 1.0.2

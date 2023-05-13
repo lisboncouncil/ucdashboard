@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sati_share2y
+    - node.type.ucservice
+  module:
+    - options
+id: node.ucservice.field_sati_share2y
+field_name: field_sati_share2y
+entity_type: node
+bundle: ucservice
+label: 'Is the share of satisfied users above 80%?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

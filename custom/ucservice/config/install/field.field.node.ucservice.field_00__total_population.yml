@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_00__total_population
+    - node.type.ucservice
+id: node.ucservice.field_00__total_population
+field_name: field_00__total_population
+entity_type: node
+bundle: ucservice
+label: 'Total population of the local authority'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

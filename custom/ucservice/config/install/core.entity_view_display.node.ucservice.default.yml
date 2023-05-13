@@ -1,0 +1,768 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.ucservice.field_00__total_population
+    - field.field.node.ucservice.field_00_total_budget
+    - field.field.node.ucservice.field_00_total_number_emp
+    - field.field.node.ucservice.field_0_total_budget
+    - field.field.node.ucservice.field_0_total_number_employees_
+    - field.field.node.ucservice.field_0_total_population
+    - field.field.node.ucservice.field_ado_publicdata
+    - field.field.node.ucservice.field_ado_publicdata_ev
+    - field.field.node.ucservice.field_ado_transact
+    - field.field.node.ucservice.field_ado_transact_ev
+    - field.field.node.ucservice.field_citi_change_dec
+    - field.field.node.ucservice.field_citi_change_dec_ev
+    - field.field.node.ucservice.field_citi_feedback
+    - field.field.node.ucservice.field_citi_feedback_ev
+    - field.field.node.ucservice.field_co_codesign
+    - field.field.node.ucservice.field_co_codesign_dis
+    - field.field.node.ucservice.field_co_codesign_dis_ev
+    - field.field.node.ucservice.field_co_codesign_ev
+    - field.field.node.ucservice.field_co_plan_regrelease
+    - field.field.node.ucservice.field_co_plan_regrelease_ev
+    - field.field.node.ucservice.field_co_userresearch
+    - field.field.node.ucservice.field_co_userresearch_ev
+    - field.field.node.ucservice.field_co_webanalitycs
+    - field.field.node.ucservice.field_co_webanalitycs_ev
+    - field.field.node.ucservice.field_eco_api
+    - field.field.node.ucservice.field_eco_api_ev
+    - field.field.node.ucservice.field_eco_api_howmany
+    - field.field.node.ucservice.field_eco_collaboration
+    - field.field.node.ucservice.field_eco_collaboration_ev
+    - field.field.node.ucservice.field_eco_eid
+    - field.field.node.ucservice.field_eco_eid_ev
+    - field.field.node.ucservice.field_env_co2
+    - field.field.node.ucservice.field_env_co2_ev
+    - field.field.node.ucservice.field_inter_onceonly
+    - field.field.node.ucservice.field_inter_onceonly_ev
+    - field.field.node.ucservice.field_inter_opensrc
+    - field.field.node.ucservice.field_inter_opensrc_ev
+    - field.field.node.ucservice.field_inter_stdprocure
+    - field.field.node.ucservice.field_inter_stdprocure_ev
+    - field.field.node.ucservice.field_redu_financesaved
+    - field.field.node.ucservice.field_redu_financesaved_ev
+    - field.field.node.ucservice.field_redu_timesaved
+    - field.field.node.ucservice.field_redu_timesaved_ev
+    - field.field.node.ucservice.field_sati_servprovision
+    - field.field.node.ucservice.field_sati_servprovision_ev
+    - field.field.node.ucservice.field_sati_share2y
+    - field.field.node.ucservice.field_sati_share2y_ev
+    - field.field.node.ucservice.field_sec_control_data
+    - field.field.node.ucservice.field_sec_control_data_ev
+    - field.field.node.ucservice.field_sec_eid
+    - field.field.node.ucservice.field_sec_eid_ev
+    - field.field.node.ucservice.field_sec_procedure
+    - field.field.node.ucservice.field_sec_procedure_ev
+    - field.field.node.ucservice.field_sk_how_many_ict_specialist
+    - field.field.node.ucservice.field_sk_ict_subcontractors
+    - field.field.node.ucservice.field_sk_locauth_pos_serv_des
+    - field.field.node.ucservice.field_sk_locauth_pos_serv_des_ev
+    - field.field.node.ucservice.field_sk_locauth_pos_serv_design
+    - field.field.node.ucservice.field_sk_locauth_train_dscs
+    - field.field.node.ucservice.field_sk_locauth_train_dscs_ev
+    - field.field.node.ucservice.field_sk_locauth_training_cit
+    - field.field.node.ucservice.field_sk_locauth_training_cit_ev
+    - field.field.node.ucservice.field_sk_locauth_training_cs
+    - field.field.node.ucservice.field_sk_locauth_training_cs_ev
+    - field.field.node.ucservice.field_sk_locauth_training_ds_cs
+    - field.field.node.ucservice.field_sk_locauth_training_ds_cse
+    - field.field.node.ucservice.field_st_localauth_cdo
+    - field.field.node.ucservice.field_st_localauth_cdo_ev
+    - field.field.node.ucservice.field_st_localauth_digitstra
+    - field.field.node.ucservice.field_st_localauth_digitstra_ev
+    - field.field.node.ucservice.field_st_localauth_digitstrategy
+    - field.field.node.ucservice.field_st_localauth_serv_guid
+    - field.field.node.ucservice.field_st_localauth_serv_guid_ev
+    - field.field.node.ucservice.field_st_localauth_serv_guide_mo
+    - field.field.node.ucservice.field_st_localauth_serv_stand
+    - field.field.node.ucservice.field_st_localauth_serv_stand_ev
+    - field.field.node.ucservice.field_st_localauth_service_guide
+    - field.field.node.ucservice.field_st_localauth_service_stand
+    - field.field.node.ucservice.field_st_locaut_serv_guid_mon
+    - field.field.node.ucservice.field_st_locaut_serv_guid_mon_ev
+    - field.field.node.ucservice.field_st_strat_mention_design
+    - field.field.node.ucservice.field_st_strat_mention_design_ev
+    - field.field.node.ucservice.field_st_strategy_mention_design
+    - field.field.node.ucservice.field_sup_auth_app
+    - field.field.node.ucservice.field_sup_auth_app_ev
+    - field.field.node.ucservice.field_sup_auth_checkproc
+    - field.field.node.ucservice.field_sup_auth_checkproc_ev
+    - field.field.node.ucservice.field_sup_auth_proactive
+    - field.field.node.ucservice.field_sup_auth_proactive_ev
+    - field.field.node.ucservice.field_sup_auth_sdg
+    - field.field.node.ucservice.field_sup_auth_sdg_ev
+    - field.field.node.ucservice.field_sup_loc_auth
+    - field.field.node.ucservice.field_sup_loc_auth_ev
+    - field.field.node.ucservice.field_usa_auth_assessment
+    - field.field.node.ucservice.field_usa_auth_assessment_ev
+    - field.field.node.ucservice.field_usa_web_audiovideo
+    - field.field.node.ucservice.field_usa_web_audiovideo_ev
+    - field.field.node.ucservice.field_usa_web_look
+    - field.field.node.ucservice.field_usa_web_look_ev
+    - field.field.node.ucservice.field_usa_web_wcag
+    - field.field.node.ucservice.field_usa_web_wcag_ev
+    - node.type.ucservice
+  module:
+    - options
+    - user
+id: node.ucservice.default
+targetEntityType: node
+bundle: ucservice
+mode: default
+content:
+  field_00__total_population:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 196
+    region: content
+  field_00_total_budget:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 197
+    region: content
+  field_00_total_number_emp:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 195
+    region: content
+  field_ado_publicdata:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 147
+    region: content
+  field_ado_publicdata_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 175
+    region: content
+  field_ado_transact:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 146
+    region: content
+  field_ado_transact_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 174
+    region: content
+  field_citi_change_dec:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 144
+    region: content
+  field_citi_change_dec_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 172
+    region: content
+  field_citi_feedback:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 145
+    region: content
+  field_citi_feedback_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 173
+    region: content
+  field_co_codesign:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 124
+    region: content
+  field_co_codesign_dis:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 127
+    region: content
+  field_co_codesign_dis_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 162
+    region: content
+  field_co_codesign_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 161
+    region: content
+  field_co_plan_regrelease:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 129
+    region: content
+  field_co_plan_regrelease_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 210
+    region: content
+  field_co_userresearch:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 125
+    region: content
+  field_co_userresearch_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 126
+    region: content
+  field_co_webanalitycs:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 128
+    region: content
+  field_co_webanalitycs_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 163
+    region: content
+  field_eco_api:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 120
+    region: content
+  field_eco_api_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 191
+    region: content
+  field_eco_collaboration:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 123
+    region: content
+  field_eco_collaboration_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 192
+    region: content
+  field_eco_eid:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 122
+    region: content
+  field_eco_eid_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 159
+    region: content
+  field_env_co2:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 152
+    region: content
+  field_env_co2_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 178
+    region: content
+  field_inter_onceonly:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 198
+    region: content
+  field_inter_onceonly_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 203
+    region: content
+  field_inter_opensrc:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 200
+    region: content
+  field_inter_opensrc_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 205
+    region: content
+  field_inter_stdprocure:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 199
+    region: content
+  field_inter_stdprocure_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 204
+    region: content
+  field_redu_financesaved:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 149
+    region: content
+  field_redu_financesaved_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 177
+    region: content
+  field_redu_timesaved:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 148
+    region: content
+  field_redu_timesaved_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 176
+    region: content
+  field_sati_servprovision:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 150
+    region: content
+  field_sati_servprovision_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 179
+    region: content
+  field_sati_share2y:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 151
+    region: content
+  field_sati_share2y_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 194
+    region: content
+  field_sec_control_data:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 141
+    region: content
+  field_sec_control_data_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 169
+    region: content
+  field_sec_eid:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 140
+    region: content
+  field_sec_eid_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 211
+    region: content
+  field_sec_procedure:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 142
+    region: content
+  field_sec_procedure_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 170
+    region: content
+  field_sk_how_many_ict_specialist:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_sk_ict_subcontractors:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_sk_locauth_pos_serv_des:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 193
+    region: content
+  field_sk_locauth_pos_serv_des_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_sk_locauth_train_dscs:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 186
+    region: content
+  field_sk_locauth_train_dscs_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 187
+    region: content
+  field_sk_locauth_training_cit:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 112
+    region: content
+  field_sk_locauth_training_cit_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 113
+    region: content
+  field_sk_locauth_training_cs:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_sk_locauth_training_cs_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_st_localauth_cdo:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 115
+    region: content
+  field_st_localauth_cdo_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 154
+    region: content
+  field_st_localauth_digitstra:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 184
+    region: content
+  field_st_localauth_digitstra_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 153
+    region: content
+  field_st_localauth_serv_guid:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 185
+    region: content
+  field_st_localauth_serv_guid_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 156
+    region: content
+  field_st_localauth_serv_stand:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 188
+    region: content
+  field_st_localauth_serv_stand_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 155
+    region: content
+  field_st_locaut_serv_guid_mon:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 189
+    region: content
+  field_st_locaut_serv_guid_mon_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 157
+    region: content
+  field_st_strat_mention_design:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 190
+    region: content
+  field_st_strat_mention_design_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 158
+    region: content
+  field_sup_auth_app:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 131
+    region: content
+  field_sup_auth_app_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 181
+    region: content
+  field_sup_auth_checkproc:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 134
+    region: content
+  field_sup_auth_checkproc_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 209
+    region: content
+  field_sup_auth_proactive:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 132
+    region: content
+  field_sup_auth_proactive_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 182
+    region: content
+  field_sup_auth_sdg:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 133
+    region: content
+  field_sup_auth_sdg_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 183
+    region: content
+  field_sup_loc_auth:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 130
+    region: content
+  field_sup_loc_auth_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 180
+    region: content
+  field_usa_auth_assessment:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 135
+    region: content
+  field_usa_auth_assessment_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 164
+    region: content
+  field_usa_web_audiovideo:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 137
+    region: content
+  field_usa_web_audiovideo_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 166
+    region: content
+  field_usa_web_look:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 136
+    region: content
+  field_usa_web_look_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 165
+    region: content
+  field_usa_web_wcag:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 139
+    region: content
+  field_usa_web_wcag_ev:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 168
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  workbench_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+hidden:
+  field_0_total_budget: true
+  field_0_total_number_employees_: true
+  field_0_total_population: true
+  field_eco_api_howmany: true
+  field_sk_locauth_pos_serv_design: true
+  field_sk_locauth_training_ds_cs: true
+  field_sk_locauth_training_ds_cse: true
+  field_st_localauth_digitstrategy: true
+  field_st_localauth_serv_guide_mo: true
+  field_st_localauth_service_guide: true
+  field_st_localauth_service_stand: true
+  field_st_strategy_mention_design: true
+  search_api_excerpt: true

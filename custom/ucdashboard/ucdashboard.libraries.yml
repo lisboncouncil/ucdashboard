@@ -1,0 +1,8 @@
+ucdashboard:
+  version: 1.x
+  css:
+    theme:
+      css/ucdashboard.css: {}
+      'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css': { type: external }
+  js:
+    js/highchart-imp.js: {}

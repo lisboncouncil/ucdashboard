@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_eco_eid
+    - node.type.ucservice
+  module:
+    - options
+id: node.ucservice.field_eco_eid
+field_name: field_eco_eid
+entity_type: node
+bundle: ucservice
+label: 'Does the local authority use standardised services modules, provided at national or European level (e.g. CEF building blocks, national payment service or eID)?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

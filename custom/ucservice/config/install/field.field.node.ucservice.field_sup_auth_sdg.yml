@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sup_auth_sdg
+    - node.type.ucservice
+  module:
+    - options
+id: node.ucservice.field_sup_auth_sdg
+field_name: field_sup_auth_sdg
+entity_type: node
+bundle: ucservice
+label: 'Has the local authority already fulfilled the requirements of the <a target="_blank" href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2018.295.01.0001.01.ENG&toc=OJ:L:2018:295:TOC">Single Digital Gateway</a> (deadline end of 2022)?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

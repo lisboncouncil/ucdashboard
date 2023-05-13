@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sec_eid
+    - node.type.ucservice
+  module:
+    - options
+id: node.ucservice.field_sec_eid
+field_name: field_sec_eid
+entity_type: node
+bundle: ucservice
+label: 'Are the users able to use national eID, as a means of authentication for online services requiring authentication?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

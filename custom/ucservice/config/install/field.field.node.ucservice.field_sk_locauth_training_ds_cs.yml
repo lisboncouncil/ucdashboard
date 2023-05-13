@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sk_locauth_training_ds_cs
+    - node.type.ucservice
+  module:
+    - options
+id: node.ucservice.field_sk_locauth_training_ds_cs
+field_name: field_sk_locauth_training_ds_cs
+entity_type: node
+bundle: ucservice
+label: 'Does the local authority provide structured training on digital technologies to civil servants in the last two years?'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

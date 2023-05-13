@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_co_webanalitycs
+    - node.type.ucservice
+  module:
+    - options
+id: node.ucservice.field_co_webanalitycs
+field_name: field_co_webanalitycs
+entity_type: node
+bundle: ucservice
+label: 'Does the local authority habitually use web analytics and other service data to improve digital services (e.g. completion rates and most frequent errors)?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

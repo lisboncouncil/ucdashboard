@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sk_locauth_pos_serv_des
+    - node.type.ucservice
+  module:
+    - options
+id: node.ucservice.field_sk_locauth_pos_serv_des
+field_name: field_sk_locauth_pos_serv_des
+entity_type: node
+bundle: ucservice
+label: 'Does the local authority have internally any position such as service designers OR user researchers OR user experience experts?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_0_total_number_employees_
+    - node.type.ucservice
+id: node.ucservice.field_0_total_number_employees_
+field_name: field_0_total_number_employees_
+entity_type: node
+bundle: ucservice
+label: 'Total number of employees of the local authority'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

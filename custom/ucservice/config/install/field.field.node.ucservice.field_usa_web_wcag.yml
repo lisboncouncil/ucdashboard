@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_usa_web_wcag
+    - node.type.ucservice
+  module:
+    - options
+id: node.ucservice.field_usa_web_wcag
+field_name: field_usa_web_wcag
+entity_type: node
+bundle: ucservice
+label: 'Are the local authority web services in line with <a href="https://www.w3.org/TR/WCAG21/" target="_blank" >accessibility guidelines (WCAG)</a>?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,95 @@
+<?php
+
+use Drupal\user\Entity\Role;
+use Drupal\user\RoleInterface;
+use Drupal\redirect\Entity\Redirect;
+
+
+define('CONTENT_TYPE_UCDASHBOARD', 'ucservice');
+define('PERMISSION_UCDASHBOARD_READ', 'access ucdashboard');
+define('PERMISSION_UCDASHBOARD_WRITE', 'contributor');
+
+/**
+ * Implements hook_node_presave()
+ *
+ * Redirect after a new content creation for type ucservice.
+ */
+function ucdashboard_node_presave(Drupal\node\NodeInterface $entity) {
+  
+  if ($entity->getType() == CONTENT_TYPE_UCDASHBOARD) {
+
+    $url = "/ucdashboard/thankyou";
+    $response = new Symfony\Component\HttpFoundation\RedirectResponse($url);
+    $response->send();
+    return;
+  }
+  
+}
+
+/**
+ * Implements hook_install().
+ */
+function ucdashboard_install() {
+  
+  $role_object = Role::load(RoleInterface::AUTHENTICATED_ID);
+  $role_object->grantPermission(PERMISSION_UCDASHBOARD_READ);
+  $role_object->save();
+
+  $path_alias = \Drupal\path_alias\Entity\PathAlias::create([
+    'path' => '/node/add/ucservice',
+    'alias' => '/add-citymetrics',
+  ]);
+  $path_alias->save();
+
+}
+
+function ucdashboard_kint_preprocess_page(&$variables) {
+  kint($variables['page']);
+}
+
+/**
+ * Implements hook_theme().
+ */
+function ucdashboard_theme($existing, $type, $theme, $path) {
+  
+  $variables = [
+     
+    'ucdashboard_detail' => [
+        'variables' => [
+          'title' => NULL,
+          'data' => NULL,
+          'node0' => NULL,
+        ],
+        'template' => 'ucdashboard_detail',
+    ],
+    'ucdash_main' => [
+        'variables' => [
+          'dataset' => NULL,
+          'revisions' => NULL,
+          'show_percentage' => NULL,
+          'stats' => NULL,
+        ],
+        'template' => 'ucdash_main',
+    ],
+    'ucdash_about' => [
+        'template' => 'ucdash_about',
+        'variables' => [],
+    ],
+    'ucdash_thankyou' => [
+        'template' => 'ucdash_thankyou',
+        'variables' => [],
+    ],
+  ];
+
+  return $variables;
+}
+
+function ucdashboard_preprocess(array &$variables, $hook) {
+  $variables['base_path'] = substr(base_path(), 0, -1);
+}
+
+
+function ucdashboard_page_attachments_alter(&$page) {
+  $page['#attached']['library'][] = 'ucdashboard/ucdashboard';
+}
+

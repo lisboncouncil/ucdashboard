@@ -1,0 +1,5 @@
+name: Highcharts
+type: module
+description: Highcharts Library Support
+package: UCCs
+core_version_requirement: ^9 | ^10

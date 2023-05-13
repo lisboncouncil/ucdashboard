@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_usa_auth_assessment
+    - node.type.ucservice
+  module:
+    - options
+id: node.ucservice.field_usa_auth_assessment
+field_name: field_usa_auth_assessment
+entity_type: node
+bundle: ucservice
+label: 'Does the local authority habitually carry out useability assessment of its online services, using standard tools such as System Useability Scale (SUS)?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

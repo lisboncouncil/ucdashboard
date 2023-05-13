@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ado_transact
+    - node.type.ucservice
+  module:
+    - options
+id: node.ucservice.field_ado_transact
+field_name: field_ado_transact
+entity_type: node
+bundle: ucservice
+label: 'Considering only services that are available online, are the majority of transactions carried out online?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

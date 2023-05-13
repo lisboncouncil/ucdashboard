@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_co_userresearch_ev
+    - node.type.ucservice
+id: node.ucservice.field_co_userresearch_ev
+field_name: field_co_userresearch_ev
+entity_type: node
+bundle: ucservice
+label: 'If yes, provide the evidence, including the approximate number of sessions or people of citizens that have engaged in service co-design practices in the past two years'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_redu_timesaved
+    - node.type.ucservice
+  module:
+    - options
+id: node.ucservice.field_redu_timesaved
+field_name: field_redu_timesaved
+entity_type: node
+bundle: ucservice
+label: 'Does the authority measure the average time saved by citizens when using an online service compared to the offline one?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_citi_feedback
+    - node.type.ucservice
+  module:
+    - options
+id: node.ucservice.field_citi_feedback
+field_name: field_citi_feedback
+entity_type: node
+bundle: ucservice
+label: 'Has the local authority put in place structured means for users to provide feedback?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

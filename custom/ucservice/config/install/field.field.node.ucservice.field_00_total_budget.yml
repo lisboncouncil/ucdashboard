@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_00_total_budget
+    - node.type.ucservice
+id: node.ucservice.field_00_total_budget
+field_name: field_00_total_budget
+entity_type: node
+bundle: ucservice
+label: 'Total annual budget of the local authority (last year or average of the last three years)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

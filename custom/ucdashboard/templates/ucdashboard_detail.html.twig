@@ -1,0 +1,137 @@
+{#
+/**
+ * @file
+ * Default theme implementation to print Lorem ipsum text.
+ *
+ * Available variables:
+ *   - data[][indicator, rows] 
+ *   - indicator:
+ *      - key 
+ *      - name
+ *      - category
+ *      - ff[]
+ *
+ * @see template_preprocess_ucdashboard()
+ *
+ * @ingroup themeable
+ */
+#}
+{{ attach_library('highcharts/highcharts') }}
+{% include 'modules/custom/ucdashboard/templates/includes/breadcrumb.html.twig' %}
+
+
+<h2>{{ node0.title }}</h2>
+
+{% if data %}
+
+  <input type="hidden" id="data1" value="{{ node0.data_hc.data1|json_encode() }}" />
+  <input type="hidden" id="data_avg" value="{{ node0.data_hc.data_avg|json_encode() }}" />
+  <input type="hidden" id="categories" value='{{ node0.data_hc.categories|json_encode()|raw }}' />
+  
+  <div class="row">
+      
+      <div class="col col-12 col-md-7 col-lg-7">
+          <div id='hc-container' style='width:100%;height:100%;min-height: 720px;'></div>
+      </div>
+      
+      {% if node0.can_edit %}
+      <div class="col col-12 col-md-5 col-lg-4 offset-lg-1">
+          
+          <div class="white-block">
+              <h4>Edit your record</h4>
+              <p>You can update your data</p>
+              <div class="text-center">
+                <a class="btn btn-primary" href="{{base_path}}/node/{{ node0.nid }}/edit">Edit</a>
+              </div>
+          </div>
+              
+      </div>
+      {% endif %}
+
+  </div>
+
+  {% for key, RS in data  %}
+
+    {% if RS.indicator._cat %}
+        <h3 class="h3-dash">{{  RS.indicator._cat }}</h3>
+    {% endif %}
+
+    <h4 class="mt-5" id="sub-{{ RS.indicator.key }}">{{ RS.indicator.key }} - {{ RS.indicator.name }}</h4>
+
+    <table class="table table-condensed table-ucdashboard-det">
+      <tbody>
+        {% for row in RS.rows  %}
+          <tr class="indicator-{{row.value|lower}}">
+            <td>{{ row.label | raw }}</td>
+            <td>
+                <span class="badge badge-ucdash badge-{{row.value|lower}}">{{ row.value }}</span>
+            </td>
+        {% endfor %}
+      </tbody>
+    </table>
+
+  {% endfor %}
+
+{% endif %}
+
+
+
+
+
+<div class="white-block pt-4 mb-5">
+              
+    <h3>Background Information</h3>
+    
+    <div class="row">
+        
+        
+        <div class="col col-12 col-md-6">
+
+            <div class="key-figure">
+              <span class="kf-label">
+                  <i class="bi bi-people-fill"></i> 
+                  {{ node0.total_population }}
+              </span>
+              <div class="kf-description">Total population</div>
+            </div>
+
+            <div class="key-figure">
+
+              <span class="kf-label">
+                  <i class="bi bi-person-bounding-box"></i> 
+                  {{ node0.total_number_employees }}
+              </span>
+              <div class="kf-description">Total number of employees in the city/region administration</div>
+            </div>
+
+            <div class="key-figure">
+
+              <span class="kf-label">
+                  <i class="bi bi-bank2"></i>
+                  {{ node0.total_budget }}
+              </span>
+              <div class="kf-description">Total annual budget (last year or average of the last three years)</div>
+            </div>
+              
+        </div>
+        <div class="col col-12 col-md-6">
+
+            <div class="key-figure">
+              <span class="kf-label">
+                  <i class="bi-person-workspace"></i>
+                  {{ node0.how_many_employ }}
+              </span>
+              <div class="kf-description">Number of ICT specialists employed directly (full-time equivalent)</div>
+            </div>
+
+            <div class="key-figure">
+              <span class="kf-label">
+                  <i class="bi bi-person-workspace"></i> 
+                  {{ node0.how_many_subcontractors }}
+              </span>
+              <div class="kf-description">Number of ICT specialists employed indirectly (subcontracting/outsourcing)</div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_redu_financesaved_ev
+    - node.type.ucservice
+id: node.ucservice.field_redu_financesaved_ev
+field_name: field_redu_financesaved_ev
+entity_type: node
+bundle: ucservice
+label: ' If yes, provide the evidence, including the results'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

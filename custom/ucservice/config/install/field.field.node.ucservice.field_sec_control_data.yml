@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sec_control_data
+    - node.type.ucservice
+  module:
+    - options
+id: node.ucservice.field_sec_control_data
+field_name: field_sec_control_data
+entity_type: node
+bundle: ucservice
+label: 'Has the local authority put in place measures to ensure citizens'' control over the data held about them (such as seeing who has access to the data and for what reason, correcting data, etc.)?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

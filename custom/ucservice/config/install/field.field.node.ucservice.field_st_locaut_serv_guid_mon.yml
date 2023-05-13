@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_st_locaut_serv_guid_mon
+    - node.type.ucservice
+  module:
+    - options
+id: node.ucservice.field_st_locaut_serv_guid_mon
+field_name: field_st_locaut_serv_guid_mon
+entity_type: node
+bundle: ucservice
+label: 'Does the local authority have in place formal methods to monitor and enforce such service standards and design guidelines?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

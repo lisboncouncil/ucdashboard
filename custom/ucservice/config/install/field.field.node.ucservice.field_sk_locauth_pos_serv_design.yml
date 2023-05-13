@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sk_locauth_pos_serv_design
+    - node.type.ucservice
+  module:
+    - options
+id: node.ucservice.field_sk_locauth_pos_serv_design
+field_name: field_sk_locauth_pos_serv_design
+entity_type: node
+bundle: ucservice
+label: 'Does the local authority have in the administration the positions of service designers / user researchers / user experience experts?'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_inter_stdprocure_ev
+    - node.type.ucservice
+id: node.ucservice.field_inter_stdprocure_ev
+field_name: field_inter_stdprocure_ev
+entity_type: node
+bundle: ucservice
+label: 'If yes, provide evidence'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

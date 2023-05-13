@@ -1,0 +1,1337 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_00__total_population
+    - field.storage.node.field_00_total_budget
+    - field.storage.node.field_00_total_number_emp
+    - field.storage.node.field_ado_publicdata
+    - field.storage.node.field_ado_publicdata_ev
+    - field.storage.node.field_ado_transact
+    - field.storage.node.field_ado_transact_ev
+    - field.storage.node.field_citi_change_dec
+    - field.storage.node.field_citi_change_dec_ev
+    - field.storage.node.field_citi_feedback
+    - field.storage.node.field_citi_feedback_ev
+    - field.storage.node.field_co_codesign
+    - field.storage.node.field_co_codesign_dis
+    - field.storage.node.field_co_codesign_dis_ev
+    - field.storage.node.field_co_codesign_ev
+    - field.storage.node.field_co_plan_regrelease
+    - field.storage.node.field_co_userresearch
+    - field.storage.node.field_co_userresearch_ev
+    - field.storage.node.field_co_webanalitycs
+    - field.storage.node.field_co_webanalitycs_ev
+    - field.storage.node.field_eco_api
+    - field.storage.node.field_eco_api_ev
+    - field.storage.node.field_eco_collaboration
+    - field.storage.node.field_eco_collaboration_ev
+    - field.storage.node.field_eco_eid
+    - field.storage.node.field_eco_eid_ev
+    - field.storage.node.field_env_co2
+    - field.storage.node.field_env_co2_ev
+    - field.storage.node.field_redu_financesaved
+    - field.storage.node.field_redu_financesaved_ev
+    - field.storage.node.field_redu_timesaved
+    - field.storage.node.field_redu_timesaved_ev
+    - field.storage.node.field_sati_servprovision
+    - field.storage.node.field_sati_servprovision_ev
+    - field.storage.node.field_sati_share2y
+    - field.storage.node.field_sati_share2y_ev
+    - field.storage.node.field_sec_control_data
+    - field.storage.node.field_sec_control_data_ev
+    - field.storage.node.field_sec_eid
+    - field.storage.node.field_sec_procedure
+    - field.storage.node.field_sec_procedure_ev
+    - field.storage.node.field_sk_how_many_ict_specialist
+    - field.storage.node.field_sk_ict_subcontractors
+    - field.storage.node.field_sk_locauth_pos_serv_des
+    - field.storage.node.field_sk_locauth_pos_serv_des_ev
+    - field.storage.node.field_sk_locauth_train_dscs
+    - field.storage.node.field_sk_locauth_train_dscs_ev
+    - field.storage.node.field_sk_locauth_training_cit
+    - field.storage.node.field_sk_locauth_training_cit_ev
+    - field.storage.node.field_sk_locauth_training_cs
+    - field.storage.node.field_sk_locauth_training_cs_ev
+    - field.storage.node.field_st_localauth_cdo
+    - field.storage.node.field_st_localauth_cdo_ev
+    - field.storage.node.field_st_localauth_digitstra
+    - field.storage.node.field_st_localauth_digitstra_ev
+    - field.storage.node.field_st_localauth_serv_guid
+    - field.storage.node.field_st_localauth_serv_guid_ev
+    - field.storage.node.field_st_localauth_serv_stand
+    - field.storage.node.field_st_localauth_serv_stand_ev
+    - field.storage.node.field_st_locaut_serv_guid_mon
+    - field.storage.node.field_st_locaut_serv_guid_mon_ev
+    - field.storage.node.field_st_strat_mention_design
+    - field.storage.node.field_st_strat_mention_design_ev
+    - field.storage.node.field_sup_auth_app
+    - field.storage.node.field_sup_auth_app_ev
+    - field.storage.node.field_sup_auth_checkproc
+    - field.storage.node.field_sup_auth_proactive
+    - field.storage.node.field_sup_auth_proactive_ev
+    - field.storage.node.field_sup_auth_sdg
+    - field.storage.node.field_sup_auth_sdg_ev
+    - field.storage.node.field_sup_loc_auth
+    - field.storage.node.field_sup_loc_auth_ev
+    - field.storage.node.field_usa_auth_assessment
+    - field.storage.node.field_usa_auth_assessment_ev
+    - field.storage.node.field_usa_web_audiovideo
+    - field.storage.node.field_usa_web_audiovideo_ev
+    - field.storage.node.field_usa_web_look
+    - field.storage.node.field_usa_web_look_ev
+    - field.storage.node.field_usa_web_wcag
+    - field.storage.node.field_usa_web_wcag_ev
+    - node.type.ucservice
+  module:
+    - csv_serialization
+    - node
+    - options
+    - rest
+    - serialization
+    - user
+    - views_data_export
+id: export_city_metric
+label: 'Export city-metric'
+module: views
+description: ''
+tag: ''
+base_table: node_field_data
+base_field: nid
+display:
+  default:
+    id: default
+    display_title: Default
+    display_plugin: default
+    position: 0
+    display_options:
+      fields:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: false
+            ellipsis: false
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_00_total_number_emp:
+          id: field_00_total_number_emp
+          table: node__field_00_total_number_emp
+          field: field_00_total_number_emp
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: 'Total number of employees of the local authority'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_00__total_population:
+          id: field_00__total_population
+          table: node__field_00__total_population
+          field: field_00__total_population
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: 'Total population of the local authority'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_00_total_budget:
+          id: field_00_total_budget
+          table: node__field_00_total_budget
+          field: field_00_total_budget
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: 'Total annual budget of the local authority (last year or average of the last three years)'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_sk_how_many_ict_specialist:
+          id: field_sk_how_many_ict_specialist
+          table: node__field_sk_how_many_ict_specialist
+          field: field_sk_how_many_ict_specialist
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: 'How many ICT specialists does the local authority employ directly (full-time equivalent)?'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_sk_ict_subcontractors:
+          id: field_sk_ict_subcontractors
+          table: node__field_sk_ict_subcontractors
+          field: field_sk_ict_subcontractors
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: 'How many ICT specialists are part of the local authority team indirectly, through subcontractors?'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_sk_locauth_pos_serv_des:
+          id: field_sk_locauth_pos_serv_des
+          table: node__field_sk_locauth_pos_serv_des
+          field: field_sk_locauth_pos_serv_des
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: 'Does the local authority have internally any position such as service designers OR user researchers OR user experience experts?'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: list_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_sk_locauth_pos_serv_des_ev:
+          id: field_sk_locauth_pos_serv_des_ev
+          table: node__field_sk_locauth_pos_serv_des_ev
+          field: field_sk_locauth_pos_serv_des_ev
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: Evidence
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: list_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_sk_locauth_training_cs:
+          id: field_sk_locauth_training_cs
+          table: node__field_sk_locauth_training_cs
+          field: field_sk_locauth_training_cs
+        field_sk_locauth_training_cs_ev:
+          id: field_sk_locauth_training_cs_ev
+          table: node__field_sk_locauth_training_cs_ev
+          field: field_sk_locauth_training_cs_ev
+        field_sk_locauth_train_dscs:
+          id: field_sk_locauth_train_dscs
+          table: node__field_sk_locauth_train_dscs
+          field: field_sk_locauth_train_dscs
+        field_sk_locauth_train_dscs_ev:
+          id: field_sk_locauth_train_dscs_ev
+          table: node__field_sk_locauth_train_dscs_ev
+          field: field_sk_locauth_train_dscs_ev
+        field_sk_locauth_training_cit:
+          id: field_sk_locauth_training_cit
+          table: node__field_sk_locauth_training_cit
+          field: field_sk_locauth_training_cit
+        field_sk_locauth_training_cit_ev:
+          id: field_sk_locauth_training_cit_ev
+          table: node__field_sk_locauth_training_cit_ev
+          field: field_sk_locauth_training_cit_ev
+        field_st_localauth_digitstra:
+          id: field_st_localauth_digitstra
+          table: node__field_st_localauth_digitstra
+          field: field_st_localauth_digitstra
+        field_st_localauth_digitstra_ev:
+          id: field_st_localauth_digitstra_ev
+          table: node__field_st_localauth_digitstra_ev
+          field: field_st_localauth_digitstra_ev
+        field_st_localauth_cdo:
+          id: field_st_localauth_cdo
+          table: node__field_st_localauth_cdo
+          field: field_st_localauth_cdo
+        field_st_localauth_cdo_ev:
+          id: field_st_localauth_cdo_ev
+          table: node__field_st_localauth_cdo_ev
+          field: field_st_localauth_cdo_ev
+        field_st_localauth_serv_stand:
+          id: field_st_localauth_serv_stand
+          table: node__field_st_localauth_serv_stand
+          field: field_st_localauth_serv_stand
+        field_st_localauth_serv_stand_ev:
+          id: field_st_localauth_serv_stand_ev
+          table: node__field_st_localauth_serv_stand_ev
+          field: field_st_localauth_serv_stand_ev
+        field_st_localauth_serv_guid:
+          id: field_st_localauth_serv_guid
+          table: node__field_st_localauth_serv_guid
+          field: field_st_localauth_serv_guid
+        field_st_localauth_serv_guid_ev:
+          id: field_st_localauth_serv_guid_ev
+          table: node__field_st_localauth_serv_guid_ev
+          field: field_st_localauth_serv_guid_ev
+        field_st_locaut_serv_guid_mon:
+          id: field_st_locaut_serv_guid_mon
+          table: node__field_st_locaut_serv_guid_mon
+          field: field_st_locaut_serv_guid_mon
+        field_st_locaut_serv_guid_mon_ev:
+          id: field_st_locaut_serv_guid_mon_ev
+          table: node__field_st_locaut_serv_guid_mon_ev
+          field: field_st_locaut_serv_guid_mon_ev
+        field_st_strat_mention_design:
+          id: field_st_strat_mention_design
+          table: node__field_st_strat_mention_design
+          field: field_st_strat_mention_design
+        field_st_strat_mention_design_ev:
+          id: field_st_strat_mention_design_ev
+          table: node__field_st_strat_mention_design_ev
+          field: field_st_strat_mention_design_ev
+        field_eco_api:
+          id: field_eco_api
+          table: node__field_eco_api
+          field: field_eco_api
+        field_eco_api_ev:
+          id: field_eco_api_ev
+          table: node__field_eco_api_ev
+          field: field_eco_api_ev
+        field_eco_eid:
+          id: field_eco_eid
+          table: node__field_eco_eid
+          field: field_eco_eid
+        field_eco_eid_ev:
+          id: field_eco_eid_ev
+          table: node__field_eco_eid_ev
+          field: field_eco_eid_ev
+        field_eco_collaboration:
+          id: field_eco_collaboration
+          table: node__field_eco_collaboration
+          field: field_eco_collaboration
+        field_eco_collaboration_ev:
+          id: field_eco_collaboration_ev
+          table: node__field_eco_collaboration_ev
+          field: field_eco_collaboration_ev
+        field_co_codesign:
+          id: field_co_codesign
+          table: node__field_co_codesign
+          field: field_co_codesign
+        field_co_codesign_ev:
+          id: field_co_codesign_ev
+          table: node__field_co_codesign_ev
+          field: field_co_codesign_ev
+        field_co_userresearch:
+          id: field_co_userresearch
+          table: node__field_co_userresearch
+          field: field_co_userresearch
+        field_co_userresearch_ev:
+          id: field_co_userresearch_ev
+          table: node__field_co_userresearch_ev
+          field: field_co_userresearch_ev
+        field_co_codesign_dis:
+          id: field_co_codesign_dis
+          table: node__field_co_codesign_dis
+          field: field_co_codesign_dis
+        field_co_codesign_dis_ev:
+          id: field_co_codesign_dis_ev
+          table: node__field_co_codesign_dis_ev
+          field: field_co_codesign_dis_ev
+        field_co_webanalitycs:
+          id: field_co_webanalitycs
+          table: node__field_co_webanalitycs
+          field: field_co_webanalitycs
+        field_co_webanalitycs_ev:
+          id: field_co_webanalitycs_ev
+          table: node__field_co_webanalitycs_ev
+          field: field_co_webanalitycs_ev
+        field_co_plan_regrelease:
+          id: field_co_plan_regrelease
+          table: node__field_co_plan_regrelease
+          field: field_co_plan_regrelease
+        field_sup_loc_auth:
+          id: field_sup_loc_auth
+          table: node__field_sup_loc_auth
+          field: field_sup_loc_auth
+        field_sup_loc_auth_ev:
+          id: field_sup_loc_auth_ev
+          table: node__field_sup_loc_auth_ev
+          field: field_sup_loc_auth_ev
+        field_sup_auth_app:
+          id: field_sup_auth_app
+          table: node__field_sup_auth_app
+          field: field_sup_auth_app
+        field_sup_auth_app_ev:
+          id: field_sup_auth_app_ev
+          table: node__field_sup_auth_app_ev
+          field: field_sup_auth_app_ev
+        field_sup_auth_proactive:
+          id: field_sup_auth_proactive
+          table: node__field_sup_auth_proactive
+          field: field_sup_auth_proactive
+        field_sup_auth_proactive_ev:
+          id: field_sup_auth_proactive_ev
+          table: node__field_sup_auth_proactive_ev
+          field: field_sup_auth_proactive_ev
+        field_sup_auth_sdg:
+          id: field_sup_auth_sdg
+          table: node__field_sup_auth_sdg
+          field: field_sup_auth_sdg
+        field_sup_auth_sdg_ev:
+          id: field_sup_auth_sdg_ev
+          table: node__field_sup_auth_sdg_ev
+          field: field_sup_auth_sdg_ev
+        field_sup_auth_checkproc:
+          id: field_sup_auth_checkproc
+          table: node__field_sup_auth_checkproc
+          field: field_sup_auth_checkproc
+        field_usa_web_look:
+          id: field_usa_web_look
+          table: node__field_usa_web_look
+          field: field_usa_web_look
+        field_usa_web_look_ev:
+          id: field_usa_web_look_ev
+          table: node__field_usa_web_look_ev
+          field: field_usa_web_look_ev
+        field_usa_web_audiovideo:
+          id: field_usa_web_audiovideo
+          table: node__field_usa_web_audiovideo
+          field: field_usa_web_audiovideo
+        field_usa_web_audiovideo_ev:
+          id: field_usa_web_audiovideo_ev
+          table: node__field_usa_web_audiovideo_ev
+          field: field_usa_web_audiovideo_ev
+        field_usa_web_wcag:
+          id: field_usa_web_wcag
+          table: node__field_usa_web_wcag
+          field: field_usa_web_wcag
+        field_usa_web_wcag_ev:
+          id: field_usa_web_wcag_ev
+          table: node__field_usa_web_wcag_ev
+          field: field_usa_web_wcag_ev
+        field_usa_auth_assessment:
+          id: field_usa_auth_assessment
+          table: node__field_usa_auth_assessment
+          field: field_usa_auth_assessment
+        field_usa_auth_assessment_ev:
+          id: field_usa_auth_assessment_ev
+          table: node__field_usa_auth_assessment_ev
+          field: field_usa_auth_assessment_ev
+        field_sec_eid:
+          id: field_sec_eid
+          table: node__field_sec_eid
+          field: field_sec_eid
+        field_sec_control_data:
+          id: field_sec_control_data
+          table: node__field_sec_control_data
+          field: field_sec_control_data
+        field_sec_control_data_ev:
+          id: field_sec_control_data_ev
+          table: node__field_sec_control_data_ev
+          field: field_sec_control_data_ev
+        field_sec_procedure:
+          id: field_sec_procedure
+          table: node__field_sec_procedure
+          field: field_sec_procedure
+        field_sec_procedure_ev:
+          id: field_sec_procedure_ev
+          table: node__field_sec_procedure_ev
+          field: field_sec_procedure_ev
+        field_citi_change_dec:
+          id: field_citi_change_dec
+          table: node__field_citi_change_dec
+          field: field_citi_change_dec
+        field_citi_change_dec_ev:
+          id: field_citi_change_dec_ev
+          table: node__field_citi_change_dec_ev
+          field: field_citi_change_dec_ev
+        field_citi_feedback:
+          id: field_citi_feedback
+          table: node__field_citi_feedback
+          field: field_citi_feedback
+        field_citi_feedback_ev:
+          id: field_citi_feedback_ev
+          table: node__field_citi_feedback_ev
+          field: field_citi_feedback_ev
+        field_ado_transact:
+          id: field_ado_transact
+          table: node__field_ado_transact
+          field: field_ado_transact
+        field_ado_transact_ev:
+          id: field_ado_transact_ev
+          table: node__field_ado_transact_ev
+          field: field_ado_transact_ev
+        field_ado_publicdata:
+          id: field_ado_publicdata
+          table: node__field_ado_publicdata
+          field: field_ado_publicdata
+        field_ado_publicdata_ev:
+          id: field_ado_publicdata_ev
+          table: node__field_ado_publicdata_ev
+          field: field_ado_publicdata_ev
+        field_redu_timesaved:
+          id: field_redu_timesaved
+          table: node__field_redu_timesaved
+          field: field_redu_timesaved
+        field_redu_timesaved_ev:
+          id: field_redu_timesaved_ev
+          table: node__field_redu_timesaved_ev
+          field: field_redu_timesaved_ev
+        field_redu_financesaved:
+          id: field_redu_financesaved
+          table: node__field_redu_financesaved
+          field: field_redu_financesaved
+        field_redu_financesaved_ev:
+          id: field_redu_financesaved_ev
+          table: node__field_redu_financesaved_ev
+          field: field_redu_financesaved_ev
+        field_sati_servprovision:
+          id: field_sati_servprovision
+          table: node__field_sati_servprovision
+          field: field_sati_servprovision
+        field_sati_servprovision_ev:
+          id: field_sati_servprovision_ev
+          table: node__field_sati_servprovision_ev
+          field: field_sati_servprovision_ev
+        field_sati_share2y:
+          id: field_sati_share2y
+          table: node__field_sati_share2y
+          field: field_sati_share2y
+        field_sati_share2y_ev:
+          id: field_sati_share2y_ev
+          table: node__field_sati_share2y_ev
+          field: field_sati_share2y_ev
+        field_env_co2:
+          id: field_env_co2
+          table: node__field_env_co2
+          field: field_env_co2
+        field_env_co2_ev:
+          id: field_env_co2_ev
+          table: node__field_env_co2_ev
+          field: field_env_co2_ev
+      pager:
+        type: mini
+        options:
+          offset: 0
+          items_per_page: 10
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      empty: {  }
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+          granularity: second
+      arguments: {  }
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            ucservice: ucservice
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
+      relationships: {  }
+      header: {  }
+      footer: {  }
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_00__total_population'
+        - 'config:field.storage.node.field_00_total_budget'
+        - 'config:field.storage.node.field_00_total_number_emp'
+        - 'config:field.storage.node.field_ado_publicdata'
+        - 'config:field.storage.node.field_ado_publicdata_ev'
+        - 'config:field.storage.node.field_ado_transact'
+        - 'config:field.storage.node.field_ado_transact_ev'
+        - 'config:field.storage.node.field_citi_change_dec'
+        - 'config:field.storage.node.field_citi_change_dec_ev'
+        - 'config:field.storage.node.field_citi_feedback'
+        - 'config:field.storage.node.field_citi_feedback_ev'
+        - 'config:field.storage.node.field_co_codesign'
+        - 'config:field.storage.node.field_co_codesign_dis'
+        - 'config:field.storage.node.field_co_codesign_dis_ev'
+        - 'config:field.storage.node.field_co_codesign_ev'
+        - 'config:field.storage.node.field_co_plan_regrelease'
+        - 'config:field.storage.node.field_co_userresearch'
+        - 'config:field.storage.node.field_co_userresearch_ev'
+        - 'config:field.storage.node.field_co_webanalitycs'
+        - 'config:field.storage.node.field_co_webanalitycs_ev'
+        - 'config:field.storage.node.field_eco_api'
+        - 'config:field.storage.node.field_eco_api_ev'
+        - 'config:field.storage.node.field_eco_collaboration'
+        - 'config:field.storage.node.field_eco_collaboration_ev'
+        - 'config:field.storage.node.field_eco_eid'
+        - 'config:field.storage.node.field_eco_eid_ev'
+        - 'config:field.storage.node.field_env_co2'
+        - 'config:field.storage.node.field_env_co2_ev'
+        - 'config:field.storage.node.field_redu_financesaved'
+        - 'config:field.storage.node.field_redu_financesaved_ev'
+        - 'config:field.storage.node.field_redu_timesaved'
+        - 'config:field.storage.node.field_redu_timesaved_ev'
+        - 'config:field.storage.node.field_sati_servprovision'
+        - 'config:field.storage.node.field_sati_servprovision_ev'
+        - 'config:field.storage.node.field_sati_share2y'
+        - 'config:field.storage.node.field_sati_share2y_ev'
+        - 'config:field.storage.node.field_sec_control_data'
+        - 'config:field.storage.node.field_sec_control_data_ev'
+        - 'config:field.storage.node.field_sec_eid'
+        - 'config:field.storage.node.field_sec_procedure'
+        - 'config:field.storage.node.field_sec_procedure_ev'
+        - 'config:field.storage.node.field_sk_how_many_ict_specialist'
+        - 'config:field.storage.node.field_sk_ict_subcontractors'
+        - 'config:field.storage.node.field_sk_locauth_pos_serv_des'
+        - 'config:field.storage.node.field_sk_locauth_pos_serv_des_ev'
+        - 'config:field.storage.node.field_sk_locauth_train_dscs'
+        - 'config:field.storage.node.field_sk_locauth_train_dscs_ev'
+        - 'config:field.storage.node.field_sk_locauth_training_cit'
+        - 'config:field.storage.node.field_sk_locauth_training_cit_ev'
+        - 'config:field.storage.node.field_sk_locauth_training_cs'
+        - 'config:field.storage.node.field_sk_locauth_training_cs_ev'
+        - 'config:field.storage.node.field_st_localauth_cdo'
+        - 'config:field.storage.node.field_st_localauth_cdo_ev'
+        - 'config:field.storage.node.field_st_localauth_digitstra'
+        - 'config:field.storage.node.field_st_localauth_digitstra_ev'
+        - 'config:field.storage.node.field_st_localauth_serv_guid'
+        - 'config:field.storage.node.field_st_localauth_serv_guid_ev'
+        - 'config:field.storage.node.field_st_localauth_serv_stand'
+        - 'config:field.storage.node.field_st_localauth_serv_stand_ev'
+        - 'config:field.storage.node.field_st_locaut_serv_guid_mon'
+        - 'config:field.storage.node.field_st_locaut_serv_guid_mon_ev'
+        - 'config:field.storage.node.field_st_strat_mention_design'
+        - 'config:field.storage.node.field_st_strat_mention_design_ev'
+        - 'config:field.storage.node.field_sup_auth_app'
+        - 'config:field.storage.node.field_sup_auth_app_ev'
+        - 'config:field.storage.node.field_sup_auth_checkproc'
+        - 'config:field.storage.node.field_sup_auth_proactive'
+        - 'config:field.storage.node.field_sup_auth_proactive_ev'
+        - 'config:field.storage.node.field_sup_auth_sdg'
+        - 'config:field.storage.node.field_sup_auth_sdg_ev'
+        - 'config:field.storage.node.field_sup_loc_auth'
+        - 'config:field.storage.node.field_sup_loc_auth_ev'
+        - 'config:field.storage.node.field_usa_auth_assessment'
+        - 'config:field.storage.node.field_usa_auth_assessment_ev'
+        - 'config:field.storage.node.field_usa_web_audiovideo'
+        - 'config:field.storage.node.field_usa_web_audiovideo_ev'
+        - 'config:field.storage.node.field_usa_web_look'
+        - 'config:field.storage.node.field_usa_web_look_ev'
+        - 'config:field.storage.node.field_usa_web_wcag'
+        - 'config:field.storage.node.field_usa_web_wcag_ev'
+  data_export_1:
+    id: data_export_1
+    display_title: 'Data export CSV'
+    display_plugin: data_export
+    position: 1
+    display_options:
+      style:
+        type: data_export
+        options:
+          formats:
+            csv: csv
+          csv_settings:
+            delimiter: ','
+            enclosure: '"'
+            escape_char: \
+            strip_tags: true
+            trim: true
+            encoding: utf8
+            utf8_bom: '0'
+            use_serializer_encode_only: false
+      display_description: ''
+      display_extenders: {  }
+      path: ucdashboard-export/raw-data-csv
+      filename: ''
+      automatic_download: false
+      store_in_public_file_directory: false
+      custom_redirect_path: false
+      redirect_to_display: none
+      include_query_params: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_00__total_population'
+        - 'config:field.storage.node.field_00_total_budget'
+        - 'config:field.storage.node.field_00_total_number_emp'
+        - 'config:field.storage.node.field_ado_publicdata'
+        - 'config:field.storage.node.field_ado_publicdata_ev'
+        - 'config:field.storage.node.field_ado_transact'
+        - 'config:field.storage.node.field_ado_transact_ev'
+        - 'config:field.storage.node.field_citi_change_dec'
+        - 'config:field.storage.node.field_citi_change_dec_ev'
+        - 'config:field.storage.node.field_citi_feedback'
+        - 'config:field.storage.node.field_citi_feedback_ev'
+        - 'config:field.storage.node.field_co_codesign'
+        - 'config:field.storage.node.field_co_codesign_dis'
+        - 'config:field.storage.node.field_co_codesign_dis_ev'
+        - 'config:field.storage.node.field_co_codesign_ev'
+        - 'config:field.storage.node.field_co_plan_regrelease'
+        - 'config:field.storage.node.field_co_userresearch'
+        - 'config:field.storage.node.field_co_userresearch_ev'
+        - 'config:field.storage.node.field_co_webanalitycs'
+        - 'config:field.storage.node.field_co_webanalitycs_ev'
+        - 'config:field.storage.node.field_eco_api'
+        - 'config:field.storage.node.field_eco_api_ev'
+        - 'config:field.storage.node.field_eco_collaboration'
+        - 'config:field.storage.node.field_eco_collaboration_ev'
+        - 'config:field.storage.node.field_eco_eid'
+        - 'config:field.storage.node.field_eco_eid_ev'
+        - 'config:field.storage.node.field_env_co2'
+        - 'config:field.storage.node.field_env_co2_ev'
+        - 'config:field.storage.node.field_redu_financesaved'
+        - 'config:field.storage.node.field_redu_financesaved_ev'
+        - 'config:field.storage.node.field_redu_timesaved'
+        - 'config:field.storage.node.field_redu_timesaved_ev'
+        - 'config:field.storage.node.field_sati_servprovision'
+        - 'config:field.storage.node.field_sati_servprovision_ev'
+        - 'config:field.storage.node.field_sati_share2y'
+        - 'config:field.storage.node.field_sati_share2y_ev'
+        - 'config:field.storage.node.field_sec_control_data'
+        - 'config:field.storage.node.field_sec_control_data_ev'
+        - 'config:field.storage.node.field_sec_eid'
+        - 'config:field.storage.node.field_sec_procedure'
+        - 'config:field.storage.node.field_sec_procedure_ev'
+        - 'config:field.storage.node.field_sk_how_many_ict_specialist'
+        - 'config:field.storage.node.field_sk_ict_subcontractors'
+        - 'config:field.storage.node.field_sk_locauth_pos_serv_des'
+        - 'config:field.storage.node.field_sk_locauth_pos_serv_des_ev'
+        - 'config:field.storage.node.field_sk_locauth_train_dscs'
+        - 'config:field.storage.node.field_sk_locauth_train_dscs_ev'
+        - 'config:field.storage.node.field_sk_locauth_training_cit'
+        - 'config:field.storage.node.field_sk_locauth_training_cit_ev'
+        - 'config:field.storage.node.field_sk_locauth_training_cs'
+        - 'config:field.storage.node.field_sk_locauth_training_cs_ev'
+        - 'config:field.storage.node.field_st_localauth_cdo'
+        - 'config:field.storage.node.field_st_localauth_cdo_ev'
+        - 'config:field.storage.node.field_st_localauth_digitstra'
+        - 'config:field.storage.node.field_st_localauth_digitstra_ev'
+        - 'config:field.storage.node.field_st_localauth_serv_guid'
+        - 'config:field.storage.node.field_st_localauth_serv_guid_ev'
+        - 'config:field.storage.node.field_st_localauth_serv_stand'
+        - 'config:field.storage.node.field_st_localauth_serv_stand_ev'
+        - 'config:field.storage.node.field_st_locaut_serv_guid_mon'
+        - 'config:field.storage.node.field_st_locaut_serv_guid_mon_ev'
+        - 'config:field.storage.node.field_st_strat_mention_design'
+        - 'config:field.storage.node.field_st_strat_mention_design_ev'
+        - 'config:field.storage.node.field_sup_auth_app'
+        - 'config:field.storage.node.field_sup_auth_app_ev'
+        - 'config:field.storage.node.field_sup_auth_checkproc'
+        - 'config:field.storage.node.field_sup_auth_proactive'
+        - 'config:field.storage.node.field_sup_auth_proactive_ev'
+        - 'config:field.storage.node.field_sup_auth_sdg'
+        - 'config:field.storage.node.field_sup_auth_sdg_ev'
+        - 'config:field.storage.node.field_sup_loc_auth'
+        - 'config:field.storage.node.field_sup_loc_auth_ev'
+        - 'config:field.storage.node.field_usa_auth_assessment'
+        - 'config:field.storage.node.field_usa_auth_assessment_ev'
+        - 'config:field.storage.node.field_usa_web_audiovideo'
+        - 'config:field.storage.node.field_usa_web_audiovideo_ev'
+        - 'config:field.storage.node.field_usa_web_look'
+        - 'config:field.storage.node.field_usa_web_look_ev'
+        - 'config:field.storage.node.field_usa_web_wcag'
+        - 'config:field.storage.node.field_usa_web_wcag_ev'
+  data_export_2:
+    id: data_export_2
+    display_title: 'Data export JSON'
+    display_plugin: data_export
+    position: 1
+    display_options:
+      style:
+        type: data_export
+        options:
+          formats:
+            json: json
+          csv_settings:
+            delimiter: ','
+            enclosure: '"'
+            escape_char: \
+            strip_tags: true
+            trim: true
+            encoding: utf8
+            utf8_bom: '0'
+            use_serializer_encode_only: false
+      display_description: ''
+      display_extenders: {  }
+      path: ucdashboard-export/raw-data-json
+      filename: ''
+      automatic_download: false
+      store_in_public_file_directory: false
+      custom_redirect_path: false
+      redirect_to_display: none
+      include_query_params: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_00__total_population'
+        - 'config:field.storage.node.field_00_total_budget'
+        - 'config:field.storage.node.field_00_total_number_emp'
+        - 'config:field.storage.node.field_ado_publicdata'
+        - 'config:field.storage.node.field_ado_publicdata_ev'
+        - 'config:field.storage.node.field_ado_transact'
+        - 'config:field.storage.node.field_ado_transact_ev'
+        - 'config:field.storage.node.field_citi_change_dec'
+        - 'config:field.storage.node.field_citi_change_dec_ev'
+        - 'config:field.storage.node.field_citi_feedback'
+        - 'config:field.storage.node.field_citi_feedback_ev'
+        - 'config:field.storage.node.field_co_codesign'
+        - 'config:field.storage.node.field_co_codesign_dis'
+        - 'config:field.storage.node.field_co_codesign_dis_ev'
+        - 'config:field.storage.node.field_co_codesign_ev'
+        - 'config:field.storage.node.field_co_plan_regrelease'
+        - 'config:field.storage.node.field_co_userresearch'
+        - 'config:field.storage.node.field_co_userresearch_ev'
+        - 'config:field.storage.node.field_co_webanalitycs'
+        - 'config:field.storage.node.field_co_webanalitycs_ev'
+        - 'config:field.storage.node.field_eco_api'
+        - 'config:field.storage.node.field_eco_api_ev'
+        - 'config:field.storage.node.field_eco_collaboration'
+        - 'config:field.storage.node.field_eco_collaboration_ev'
+        - 'config:field.storage.node.field_eco_eid'
+        - 'config:field.storage.node.field_eco_eid_ev'
+        - 'config:field.storage.node.field_env_co2'
+        - 'config:field.storage.node.field_env_co2_ev'
+        - 'config:field.storage.node.field_redu_financesaved'
+        - 'config:field.storage.node.field_redu_financesaved_ev'
+        - 'config:field.storage.node.field_redu_timesaved'
+        - 'config:field.storage.node.field_redu_timesaved_ev'
+        - 'config:field.storage.node.field_sati_servprovision'
+        - 'config:field.storage.node.field_sati_servprovision_ev'
+        - 'config:field.storage.node.field_sati_share2y'
+        - 'config:field.storage.node.field_sati_share2y_ev'
+        - 'config:field.storage.node.field_sec_control_data'
+        - 'config:field.storage.node.field_sec_control_data_ev'
+        - 'config:field.storage.node.field_sec_eid'
+        - 'config:field.storage.node.field_sec_procedure'
+        - 'config:field.storage.node.field_sec_procedure_ev'
+        - 'config:field.storage.node.field_sk_how_many_ict_specialist'
+        - 'config:field.storage.node.field_sk_ict_subcontractors'
+        - 'config:field.storage.node.field_sk_locauth_pos_serv_des'
+        - 'config:field.storage.node.field_sk_locauth_pos_serv_des_ev'
+        - 'config:field.storage.node.field_sk_locauth_train_dscs'
+        - 'config:field.storage.node.field_sk_locauth_train_dscs_ev'
+        - 'config:field.storage.node.field_sk_locauth_training_cit'
+        - 'config:field.storage.node.field_sk_locauth_training_cit_ev'
+        - 'config:field.storage.node.field_sk_locauth_training_cs'
+        - 'config:field.storage.node.field_sk_locauth_training_cs_ev'
+        - 'config:field.storage.node.field_st_localauth_cdo'
+        - 'config:field.storage.node.field_st_localauth_cdo_ev'
+        - 'config:field.storage.node.field_st_localauth_digitstra'
+        - 'config:field.storage.node.field_st_localauth_digitstra_ev'
+        - 'config:field.storage.node.field_st_localauth_serv_guid'
+        - 'config:field.storage.node.field_st_localauth_serv_guid_ev'
+        - 'config:field.storage.node.field_st_localauth_serv_stand'
+        - 'config:field.storage.node.field_st_localauth_serv_stand_ev'
+        - 'config:field.storage.node.field_st_locaut_serv_guid_mon'
+        - 'config:field.storage.node.field_st_locaut_serv_guid_mon_ev'
+        - 'config:field.storage.node.field_st_strat_mention_design'
+        - 'config:field.storage.node.field_st_strat_mention_design_ev'
+        - 'config:field.storage.node.field_sup_auth_app'
+        - 'config:field.storage.node.field_sup_auth_app_ev'
+        - 'config:field.storage.node.field_sup_auth_checkproc'
+        - 'config:field.storage.node.field_sup_auth_proactive'
+        - 'config:field.storage.node.field_sup_auth_proactive_ev'
+        - 'config:field.storage.node.field_sup_auth_sdg'
+        - 'config:field.storage.node.field_sup_auth_sdg_ev'
+        - 'config:field.storage.node.field_sup_loc_auth'
+        - 'config:field.storage.node.field_sup_loc_auth_ev'
+        - 'config:field.storage.node.field_usa_auth_assessment'
+        - 'config:field.storage.node.field_usa_auth_assessment_ev'
+        - 'config:field.storage.node.field_usa_web_audiovideo'
+        - 'config:field.storage.node.field_usa_web_audiovideo_ev'
+        - 'config:field.storage.node.field_usa_web_look'
+        - 'config:field.storage.node.field_usa_web_look_ev'
+        - 'config:field.storage.node.field_usa_web_wcag'
+        - 'config:field.storage.node.field_usa_web_wcag_ev'

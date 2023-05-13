@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_eco_collaboration_ev
+    - node.type.ucservice
+id: node.ucservice.field_eco_collaboration_ev
+field_name: field_eco_collaboration_ev
+entity_type: node
+bundle: ucservice
+label: 'If yes, provide evidence of collaborations carried out'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ado_publicdata_ev
+    - node.type.ucservice
+id: node.ucservice.field_ado_publicdata_ev
+field_name: field_ado_publicdata_ev
+entity_type: node
+bundle: ucservice
+label: 'If yes, provide evidence of what kind of data on usage are provided'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,40 @@
+ucdashboard.dashboard:
+  path: '/ucdashboard'
+  defaults:
+    _controller: '\Drupal\ucdashboard\Controller\DashboardController::dashboard'
+    _title: 'Benchmarking Dashboard <sup>BETA</sup>'
+  requirements:
+    _permission: 'access content'
+  options:
+    no_cache: 'TRUE'
+
+ucdashboard.about:
+  path: '/ucdashboard/about'
+  defaults:
+    _controller: '\Drupal\ucdashboard\Controller\DashboardController::about'
+    _title: 'About Benchmarking Dashboard'
+  requirements:
+    _permission: 'access content'
+    
+ucdashboard.data:
+  path: '/ucdashboard/data'
+  defaults:
+    _controller: '\Drupal\ucdashboard\Controller\DashboardController::opendata'
+  requirements:
+    _permission: 'access content'
+    
+ucdashboard.records:
+  path: '/ucdashboard/{nid}'
+  defaults:
+    _controller: '\Drupal\ucdashboard\Controller\DashboardController::single'
+    _title: 'Benchmarking Dashboard <sup>BETA</sup>'
+  requirements:
+    _permission: 'access content'
+    
+ucdashboard.thankyou:
+  path: '/ucdashboard/thankyou'
+  defaults:
+    _controller: '\Drupal\ucdashboard\Controller\DashboardController::thankyou'
+    _title: 'Benchmarking Dashboard <sup>BETA</sup>'
+  requirements:
+    _permission: 'access content'

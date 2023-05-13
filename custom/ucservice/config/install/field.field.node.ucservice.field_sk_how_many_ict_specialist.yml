@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sk_how_many_ict_specialist
+    - node.type.ucservice
+id: node.ucservice.field_sk_how_many_ict_specialist
+field_name: field_sk_how_many_ict_specialist
+entity_type: node
+bundle: ucservice
+label: 'How many ICT specialists does the local authority employ directly (full-time equivalent)?'
+description: 'Specify a number (0 if not present)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

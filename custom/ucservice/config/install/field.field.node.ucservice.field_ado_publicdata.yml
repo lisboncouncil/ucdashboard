@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ado_publicdata
+    - node.type.ucservice
+  module:
+    - options
+id: node.ucservice.field_ado_publicdata
+field_name: field_ado_publicdata
+entity_type: node
+bundle: ucservice
+label: 'Does the local authority publish data on usage of online services (such as a dashboard with metrics on transactions) on a regular basis?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

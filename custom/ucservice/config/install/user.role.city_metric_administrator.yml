@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.ucservice
+  module:
+    - filter
+    - node
+    - system
+    - toolbar
+    - view_unpublished
+id: city_metric_administrator
+label: 'City metric administrator'
+weight: 1
+is_admin: null

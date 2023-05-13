@@ -1,0 +1,179 @@
+{# UCDashboard main page Twig template #}
+
+<section class="ucdashboard-intro container">
+  
+  <div class="row">
+      
+      <div class="col-12 col-md-9 pr-4 border-right">
+            <h3>How user-centric are European cities and regions?</h3>
+          <p>
+            Based on a list of curated indicators, the <strong>Benchmarking Dashboard</strong> ranks the
+          performance of European cities and regions in designing and delivering digital
+          services that focus on their citizens and their needs.</p>
+
+          <p>If you are a city or region interested in taking part and providing your data,
+          please contact Chrysoula Mitta, associate director at the Lisbon Council at
+          <a href="mailto:usercentricities@lisboncouncil.net">usercentricities@lisboncouncil.net</a>.</p>
+      </div>
+      
+      <div class="col-12 col-sm-3">
+          
+          <div class="pl-4 text-center d-flex align-items-center justify-content-center" style="height:100%">
+              
+              <div>
+                <a class="btn btn-primary" href="{{ base_path }}/add-citymetrics">Add City/Region Metrics</a>
+              </div>
+          </div>
+          
+      </div>
+  </div>
+    
+    <div class="row">
+
+        <div class="col-12 col-md-9 pr-4 border-right">
+
+            <h4 style="color:#983e46;">New publication:</h4>
+            <p>
+                <strong>The State of UserCentriCities: How Cities and Regions are 
+                    Creating Better Digital Services by Putting Citizens’ Needs at the Centre</strong>, 
+                an in-depth analysis of dashboard results and the state of citizen-centric 
+                digital public services. 
+            </p>
+        </div>
+
+        <div class="col-12 col-sm-3">
+            <p>
+                <a class="btn btn-secondary" href="/sites/default/files/report/The_State_of_UserCentriCities.pdf">Download <br />The State of UserCentriCities</a> 
+            </p>
+        </div>
+    </div>
+  
+</section>
+
+
+  
+{% if dataset %}
+    
+    <ul class="nav nav-tabs mt-5" id="dashboardTabs" role="tablist">
+
+        {% for k,rev in revisions %}
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link {{  k == 0 ? 'active' : '' }}" id="home-tab" data-bs-toggle="tab" data-bs-target="#dtab_{{ k }}" type="button" role="tab" aria-controls="home" aria-selected="true">
+              {{ rev.label }}
+          </button>
+        </li>
+
+        {% endfor %}
+    </ul>
+    
+    
+  <div class="tab-content" id="dashboardTabsContent">
+  {% for kk, data in dataset %}
+      
+    <div class="tab-pane fade {{  kk == 0 ? 'show active' : '' }}" id="dtab_{{ kk }}" role="tabpanel" aria-labelledby="dtab_{{ kk }}">
+
+        <section class="ucdashboard-pillars d-flex justify-content-between my-3">
+    
+            {% for k, value in stats[kk]  %}
+
+            <div class="mb-3 ucpillar ucpillar-{{value[1]}} d-flex justify-content-between align-items-stretch">
+
+              <div class="subtitle">
+                <span>Pillar average</span>
+                <h4>{{value[2]}}. {{ k }}</h4>
+              </div>
+
+              <div class="ucpillar-value align-items-end">
+                {{ value[0] }}%
+              </div>
+
+            </div>
+
+            {% endfor %}
+        </section>
+        
+        
+        <table class="table table-ucdashboard">
+            
+            <caption>
+                <span class="text-danger">*</span>
+                Ranking based on 2022 data
+            </caption>
+            
+        {% set skipth = false %}
+
+        {% for key, RS in data  %}
+
+          {% if  key == 0 %}
+              
+            <thead>
+              <tr>
+
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+                {% for sub in RS.sub %}
+                    <th>
+                        <div>{{ sub.key }} - {{ sub.name }}</div>
+                    </th>
+                {% endfor %}
+
+              </tr>
+            </thead>
+
+          {% endif %}
+
+
+          <tr>
+              
+            {% if skipth == false %}
+            <th {{ RS.rowspan > 1 ? 'rowspan=' ~ RS.rowspan  : ''  }} data-rowspan="{{ RS.rowspan }}">
+                {{ RS.rank }}
+            </th>
+            {% endif %}
+
+            <th>
+                <div class="d-flex justify-content-between">
+                    <a href="{{ base_path }}{{ RS.alias }}">{{ RS.title }}</a>
+                    {% if show_percentage %}
+                    <span class="badge bg-light text-dark">{{ (RS.average*100)|round }}%</span>
+                    {% endif %}
+                </div>
+            </th>
+
+            {% for sub in RS.sub %}
+
+              <td class="ucd ucd-{{sub.class}}" 
+                  data-val="{{ sub.val }}"
+                  data-yes="{{ sub.yes }}"
+                  data-n="{{ sub.n }}"
+                  title="Rank: {{ sub.val * 100 }} %"
+                  ><a href="{{ base_path }}{{ RS.alias }}#sub-{{ sub.key }}">{{ sub.yes }}/{{ sub.n }}</a></td>
+
+            {% endfor %}
+
+          </tr>
+          
+        {% set skipth = RS.rowspan > 1 ? true : false %}
+
+        {% endfor %}
+
+        </table>
+        
+    </div>
+    
+  {% endfor %}
+  </div>
+  
+{% else %}
+    
+    <hr class="my-5" />
+    
+    <section class="ucdashboard-no-data text-center">
+        
+        <h5>Data not yet available</h5>
+        <p>This section is in the start-up phase and there is no data yet to be seen here.</p>
+        
+    </section>
+    
+{% endif %}

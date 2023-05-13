@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_st_localauth_service_guide
+    - node.type.ucservice
+  module:
+    - options
+id: node.ucservice.field_st_localauth_service_guide
+field_name: field_st_localauth_service_guide
+entity_type: node
+bundle: ucservice
+label: 'Does the local authority have design guidelines valid across departments, including for instance standards or protocols for simple language?'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

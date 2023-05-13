@@ -1,0 +1,5 @@
+## YAML Template.
+---
+access ucdashboard:
+  title: 'Access UCCS Service Dashboard'
+  description: 'Access to the dashboard and the subpages'

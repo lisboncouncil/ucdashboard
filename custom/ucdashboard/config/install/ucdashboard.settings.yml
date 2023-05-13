@@ -1,0 +1,200 @@
+ucdashboard:
+  threshold_low:  0.33
+  threshold_medium:  0.66
+  threshold_high:  1.0
+  threshold_classes:
+    - red
+    - orange
+    - green
+  show_percentage: true
+  revisions: 
+      
+      # Revision 2023 - it's the last revision with "op" = null
+      - label: 2023
+        op: null
+        description: Last revision of the dashboard
+        schema: 
+          - key: 1.1
+            name: Skills
+            category: Enablers
+            ff:
+              - sk_locauth_pos_serv_des
+              - sk_locauth_training_cs
+              - sk_locauth_train_dscs
+              - sk_locauth_training_cit
+          - key: 1.2
+            name: Strategies
+            category: Enablers
+            ff:
+              - st_localauth_digitstra
+              - st_localauth_cdo
+              - st_localauth_serv_stand
+              - st_localauth_serv_guid
+              - st_locaut_serv_guid_mon
+              - st_strat_mention_design
+          - key: 1.3
+            name: Ecosystem
+            category: Enablers
+            ff:
+              - eco_api
+              - eco_eid
+              - eco_collaboration
+          - key: 2.1
+            name: Co-creation
+            category: User-Centricity Performance
+            ff:
+              - co_codesign
+              - co_userresearch
+              - co_codesign_dis
+              - co_webanalitycs
+              - co_plan_regrelease
+          - key: 2.2
+            name: Supply of online services
+            category: User-Centricity Performance
+            ff:
+              - sup_loc_auth
+              - sup_auth_app
+              - sup_auth_proactive
+              - sup_auth_sdg
+              - sup_auth_checkproc
+          - key: 2.3
+            name: Useability
+            category: User-Centricity Performance
+            ff:
+              - usa_auth_assessment
+              - usa_web_look
+              - usa_web_audiovideo
+              - usa_web_wcag
+          - key: 2.4
+            name: Security and privacy
+            category: User-Centricity Performance
+            ff:
+              - sec_eid
+              - sec_control_data
+              - sec_procedure
+          - key: 2.5
+            name: Citizens redress and feedback mechanisms
+            category: User-Centricity Performance
+            ff:
+              - citi_change_dec
+              - citi_feedback
+          - key: 2.6
+            name: Interoperability
+            category: User-Centricity Performance
+            ff:
+              - inter_onceonly
+              - inter_stdprocure
+              - inter_opensrc
+          - key: 3.1
+            name: Adoption
+            category: Outcome
+            ff:
+              - ado_transact
+              - ado_publicdata
+          - key: 3.2
+            name: Reduction of burden
+            category: Outcome
+            ff:
+              - redu_timesaved
+              - redu_financesaved
+          - key: 3.3
+            name: Satisfaction
+            category: Outcome
+            ff:
+              - sati_servprovision
+              - sati_share2y
+
+      # Historical data.
+      - label: 2022
+        op: before
+        date: 2023-01-01
+        description: Data until the 31/12/2022.
+        schema: 
+          - key: 1.1
+            name: Skills
+            category: Enablers
+            ff:
+              - sk_locauth_pos_serv_des
+              - sk_locauth_training_cs
+              - sk_locauth_train_dscs
+              - sk_locauth_training_cit
+          - key: 1.2
+            name: Strategies
+            category: Enablers
+            ff:
+              - st_localauth_digitstra
+              - st_localauth_cdo
+              - st_localauth_serv_stand
+              - st_localauth_serv_guid
+              - st_locaut_serv_guid_mon
+              - st_strat_mention_design
+          - key: 1.3
+            name: Ecosystem
+            category: Enablers
+            ff:
+              - eco_api
+              - eco_eid
+              - eco_collaboration
+          - key: 2.1
+            name: Co-creation
+            category: User-Centricity Performance
+            ff:
+              - co_codesign
+              - co_userresearch
+              - co_codesign_dis
+              - co_webanalitycs
+              - co_plan_regrelease
+          - key: 2.2
+            name: Supply of online services
+            category: User-Centricity Performance
+            ff:
+              - sup_loc_auth
+              - sup_auth_app
+              - sup_auth_proactive
+              - sup_auth_sdg
+              - sup_auth_checkproc
+          - key: 2.3
+            name: Useability
+            category: User-Centricity Performance
+            ff:
+              - usa_auth_assessment
+              - usa_web_look
+              - usa_web_audiovideo
+              - usa_web_wcag
+          - key: 2.4
+            name: Security and privacy
+            category: User-Centricity Performance
+            ff:
+              - sec_eid
+              - sec_control_data
+              - sec_procedure
+          - key: 2.5
+            name: Citizens redress and feedback mechanisms
+            category: User-Centricity Performance
+            ff:
+              - citi_change_dec
+              - citi_feedback
+          - key: 3.1
+            name: Adoption
+            category: Outcome
+            ff:
+              - ado_transact
+              - ado_publicdata
+          - key: 3.2
+            name: Reduction of burden
+            category: Outcome
+            ff:
+              - redu_timesaved
+              - redu_financesaved
+          - key: 3.3
+            name: Satisfaction
+            category: Outcome
+            ff:
+              - sati_servprovision
+              - sati_share2y
+          - key: 3.4
+            name: Environmental impact
+            category: Outcome
+            ff:
+              - env_co2
+    

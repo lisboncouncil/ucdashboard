@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_st_strat_mention_design
+    - node.type.ucservice
+  module:
+    - options
+id: node.ucservice.field_st_strat_mention_design
+field_name: field_st_strat_mention_design
+entity_type: node
+bundle: ucservice
+label: 'Are service design or user experience mentioned in digital strategy or some other strategy level document?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

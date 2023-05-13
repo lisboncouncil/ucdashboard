@@ -1,0 +1,5 @@
+highcharts:
+  js:
+    https://code.highcharts.com/highcharts.js: {external: true} 
+  dependencies:
+     - core/jquery

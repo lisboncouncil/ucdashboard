@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_co_plan_regrelease
+    - node.type.ucservice
+  module:
+    - options
+id: node.ucservice.field_co_plan_regrelease
+field_name: field_co_plan_regrelease
+entity_type: node
+bundle: ucservice
+label: 'Does the local authority habitually plan for releasing regular (at least once a year) new releases for existing digital services (not including technical updates automatically provided by software provider)?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

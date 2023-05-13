@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function highcharts_theme(){
+ return [
+  'highcharts-block' => [
+   'variables'=> [],   
+  ]
+ ];
+}

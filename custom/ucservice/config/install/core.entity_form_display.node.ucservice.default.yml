@@ -1,0 +1,2600 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.ucservice.field_00__total_population
+    - field.field.node.ucservice.field_00_total_budget
+    - field.field.node.ucservice.field_00_total_number_emp
+    - field.field.node.ucservice.field_0_total_budget
+    - field.field.node.ucservice.field_0_total_number_employees_
+    - field.field.node.ucservice.field_0_total_population
+    - field.field.node.ucservice.field_ado_publicdata
+    - field.field.node.ucservice.field_ado_publicdata_ev
+    - field.field.node.ucservice.field_ado_transact
+    - field.field.node.ucservice.field_ado_transact_ev
+    - field.field.node.ucservice.field_citi_change_dec
+    - field.field.node.ucservice.field_citi_change_dec_ev
+    - field.field.node.ucservice.field_citi_feedback
+    - field.field.node.ucservice.field_citi_feedback_ev
+    - field.field.node.ucservice.field_co_codesign
+    - field.field.node.ucservice.field_co_codesign_dis
+    - field.field.node.ucservice.field_co_codesign_dis_ev
+    - field.field.node.ucservice.field_co_codesign_ev
+    - field.field.node.ucservice.field_co_plan_regrelease
+    - field.field.node.ucservice.field_co_plan_regrelease_ev
+    - field.field.node.ucservice.field_co_userresearch
+    - field.field.node.ucservice.field_co_userresearch_ev
+    - field.field.node.ucservice.field_co_webanalitycs
+    - field.field.node.ucservice.field_co_webanalitycs_ev
+    - field.field.node.ucservice.field_eco_api
+    - field.field.node.ucservice.field_eco_api_ev
+    - field.field.node.ucservice.field_eco_api_howmany
+    - field.field.node.ucservice.field_eco_collaboration
+    - field.field.node.ucservice.field_eco_collaboration_ev
+    - field.field.node.ucservice.field_eco_eid
+    - field.field.node.ucservice.field_eco_eid_ev
+    - field.field.node.ucservice.field_env_co2
+    - field.field.node.ucservice.field_env_co2_ev
+    - field.field.node.ucservice.field_inter_onceonly
+    - field.field.node.ucservice.field_inter_onceonly_ev
+    - field.field.node.ucservice.field_inter_opensrc
+    - field.field.node.ucservice.field_inter_opensrc_ev
+    - field.field.node.ucservice.field_inter_stdprocure
+    - field.field.node.ucservice.field_inter_stdprocure_ev
+    - field.field.node.ucservice.field_redu_financesaved
+    - field.field.node.ucservice.field_redu_financesaved_ev
+    - field.field.node.ucservice.field_redu_timesaved
+    - field.field.node.ucservice.field_redu_timesaved_ev
+    - field.field.node.ucservice.field_sati_servprovision
+    - field.field.node.ucservice.field_sati_servprovision_ev
+    - field.field.node.ucservice.field_sati_share2y
+    - field.field.node.ucservice.field_sati_share2y_ev
+    - field.field.node.ucservice.field_sec_control_data
+    - field.field.node.ucservice.field_sec_control_data_ev
+    - field.field.node.ucservice.field_sec_eid
+    - field.field.node.ucservice.field_sec_eid_ev
+    - field.field.node.ucservice.field_sec_procedure
+    - field.field.node.ucservice.field_sec_procedure_ev
+    - field.field.node.ucservice.field_sk_how_many_ict_specialist
+    - field.field.node.ucservice.field_sk_ict_subcontractors
+    - field.field.node.ucservice.field_sk_locauth_pos_serv_des
+    - field.field.node.ucservice.field_sk_locauth_pos_serv_des_ev
+    - field.field.node.ucservice.field_sk_locauth_pos_serv_design
+    - field.field.node.ucservice.field_sk_locauth_train_dscs
+    - field.field.node.ucservice.field_sk_locauth_train_dscs_ev
+    - field.field.node.ucservice.field_sk_locauth_training_cit
+    - field.field.node.ucservice.field_sk_locauth_training_cit_ev
+    - field.field.node.ucservice.field_sk_locauth_training_cs
+    - field.field.node.ucservice.field_sk_locauth_training_cs_ev
+    - field.field.node.ucservice.field_sk_locauth_training_ds_cs
+    - field.field.node.ucservice.field_sk_locauth_training_ds_cse
+    - field.field.node.ucservice.field_st_localauth_cdo
+    - field.field.node.ucservice.field_st_localauth_cdo_ev
+    - field.field.node.ucservice.field_st_localauth_digitstra
+    - field.field.node.ucservice.field_st_localauth_digitstra_ev
+    - field.field.node.ucservice.field_st_localauth_digitstrategy
+    - field.field.node.ucservice.field_st_localauth_serv_guid
+    - field.field.node.ucservice.field_st_localauth_serv_guid_ev
+    - field.field.node.ucservice.field_st_localauth_serv_guide_mo
+    - field.field.node.ucservice.field_st_localauth_serv_stand
+    - field.field.node.ucservice.field_st_localauth_serv_stand_ev
+    - field.field.node.ucservice.field_st_localauth_service_guide
+    - field.field.node.ucservice.field_st_localauth_service_stand
+    - field.field.node.ucservice.field_st_locaut_serv_guid_mon
+    - field.field.node.ucservice.field_st_locaut_serv_guid_mon_ev
+    - field.field.node.ucservice.field_st_strat_mention_design
+    - field.field.node.ucservice.field_st_strat_mention_design_ev
+    - field.field.node.ucservice.field_st_strategy_mention_design
+    - field.field.node.ucservice.field_sup_auth_app
+    - field.field.node.ucservice.field_sup_auth_app_ev
+    - field.field.node.ucservice.field_sup_auth_checkproc
+    - field.field.node.ucservice.field_sup_auth_checkproc_ev
+    - field.field.node.ucservice.field_sup_auth_proactive
+    - field.field.node.ucservice.field_sup_auth_proactive_ev
+    - field.field.node.ucservice.field_sup_auth_sdg
+    - field.field.node.ucservice.field_sup_auth_sdg_ev
+    - field.field.node.ucservice.field_sup_loc_auth
+    - field.field.node.ucservice.field_sup_loc_auth_ev
+    - field.field.node.ucservice.field_usa_auth_assessment
+    - field.field.node.ucservice.field_usa_auth_assessment_ev
+    - field.field.node.ucservice.field_usa_web_audiovideo
+    - field.field.node.ucservice.field_usa_web_audiovideo_ev
+    - field.field.node.ucservice.field_usa_web_look
+    - field.field.node.ucservice.field_usa_web_look_ev
+    - field.field.node.ucservice.field_usa_web_wcag
+    - field.field.node.ucservice.field_usa_web_wcag_ev
+    - node.type.ucservice
+  module:
+    - field_group
+    - path
+    - workbench_moderation
+third_party_settings:
+  field_group:
+    group_0_background_information:
+      children:
+        - title
+        - field_00_total_number_emp
+        - field_00__total_population
+        - field_00_total_budget
+        - field_sk_how_many_ict_specialist
+        - field_sk_ict_subcontractors
+      label: '0. Background Information'
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      format_settings:
+        classes: ucservice-container
+        show_empty_fields: true
+        id: ''
+        description: ''
+        required_fields: true
+    group_1_enablers:
+      children:
+        - group_1_1_skills
+        - group_1_2_strategies
+        - group_1_3_ecosystem
+      label: '1. Enablers'
+      region: content
+      parent_name: ''
+      weight: 1
+      format_type: fieldset
+      format_settings:
+        classes: ucservice-container
+        show_empty_fields: true
+        id: ''
+        description: ''
+        required_fields: false
+    group_2_user_centricity_performa:
+      children:
+        - group_2_1_co_creation
+        - group_2_2_supply_of_online_servi
+        - group_2_3_usability
+        - group_2_4_security_and_privacy
+        - group_2_5_citizens_redress_and_f
+        - group_2_6_interoperability
+      label: '2. User-Centricity Performance'
+      region: content
+      parent_name: ''
+      weight: 2
+      format_type: fieldset
+      format_settings:
+        classes: ucservice-container
+        show_empty_fields: true
+        id: ''
+        description: ''
+        required_fields: false
+    group_3_outcome:
+      children:
+        - group_3_1_adoption
+        - group_3_2_reduction_of_burden
+        - group_3_3_satisfaction
+      label: '3. Outcome'
+      region: content
+      parent_name: ''
+      weight: 3
+      format_type: fieldset
+      format_settings:
+        classes: ucservice-container
+        show_empty_fields: true
+        id: ''
+        description: ''
+        required_fields: false
+    group_1_1_skills:
+      children:
+        - field_sk_locauth_pos_serv_des
+        - field_sk_locauth_pos_serv_des_ev
+        - field_sk_locauth_training_cs
+        - field_sk_locauth_training_cs_ev
+        - field_sk_locauth_train_dscs
+        - field_sk_locauth_train_dscs_ev
+        - field_sk_locauth_training_cit
+        - field_sk_locauth_training_cit_ev
+      label: '1.1 Skills'
+      region: content
+      parent_name: group_1_enablers
+      weight: 20
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: true
+        id: ''
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: label-dash2
+        attributes: ''
+        effect: none
+        speed: fast
+        required_fields: false
+    group_1_2_strategies:
+      children:
+        - field_st_localauth_digitstra
+        - field_st_localauth_digitstra_ev
+        - field_st_localauth_cdo
+        - field_st_localauth_cdo_ev
+        - field_st_localauth_serv_stand
+        - field_st_localauth_serv_stand_ev
+        - field_st_localauth_serv_guid
+        - field_st_localauth_serv_guid_ev
+        - field_st_locaut_serv_guid_mon
+        - field_st_locaut_serv_guid_mon_ev
+        - field_st_strat_mention_design
+        - field_st_strat_mention_design_ev
+      label: '1.2 Strategies'
+      region: content
+      parent_name: group_1_enablers
+      weight: 21
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: true
+        id: ''
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: label-dash2
+        attributes: ''
+        effect: none
+        speed: fast
+        required_fields: false
+    group_1_3_ecosystem:
+      children:
+        - field_eco_api
+        - field_eco_api_ev
+        - field_eco_eid
+        - field_eco_eid_ev
+        - field_eco_collaboration
+        - field_eco_collaboration_ev
+      label: '1.3 Ecosystem'
+      region: content
+      parent_name: group_1_enablers
+      weight: 23
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: true
+        id: ''
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: label-dash2
+        attributes: ''
+        effect: none
+        speed: fast
+        required_fields: false
+    group_2_1_co_creation:
+      children:
+        - field_co_codesign
+        - field_co_codesign_ev
+        - field_co_userresearch
+        - field_co_userresearch_ev
+        - field_co_codesign_dis
+        - field_co_codesign_dis_ev
+        - field_co_webanalitycs
+        - field_co_webanalitycs_ev
+        - field_co_plan_regrelease
+        - field_co_plan_regrelease_ev
+      label: '2.1 Co-creation'
+      region: content
+      parent_name: group_2_user_centricity_performa
+      weight: 35
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: true
+        id: ''
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: label-dash2
+        attributes: ''
+        effect: none
+        speed: fast
+        required_fields: false
+    group_2_2_supply_of_online_servi:
+      children:
+        - field_sup_loc_auth
+        - field_sup_loc_auth_ev
+        - field_sup_auth_app
+        - field_sup_auth_app_ev
+        - field_sup_auth_proactive
+        - field_sup_auth_proactive_ev
+        - field_sup_auth_sdg
+        - field_sup_auth_sdg_ev
+        - field_sup_auth_checkproc
+        - field_sup_auth_checkproc_ev
+      label: '2.2 Supply of online services'
+      region: content
+      parent_name: group_2_user_centricity_performa
+      weight: 36
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: true
+        id: ''
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: label-dash2
+        attributes: ''
+        effect: none
+        speed: fast
+        required_fields: false
+    group_2_3_usability:
+      children:
+        - field_usa_web_look
+        - field_usa_web_look_ev
+        - field_usa_web_audiovideo
+        - field_usa_web_audiovideo_ev
+        - field_usa_web_wcag
+        - field_usa_web_wcag_ev
+        - field_usa_auth_assessment
+        - field_usa_auth_assessment_ev
+      label: '2.3 Usability'
+      region: content
+      parent_name: group_2_user_centricity_performa
+      weight: 37
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: true
+        id: ''
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: label-dash2
+        attributes: ''
+        effect: none
+        speed: fast
+        required_fields: false
+    group_2_4_security_and_privacy:
+      children:
+        - field_sec_eid
+        - field_sec_eid_ev
+        - field_sec_control_data
+        - field_sec_control_data_ev
+        - field_sec_procedure
+        - field_sec_procedure_ev
+      label: '2.4 Security and privacy'
+      region: content
+      parent_name: group_2_user_centricity_performa
+      weight: 38
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: true
+        id: ''
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: label-dash2
+        attributes: ''
+        effect: none
+        speed: fast
+        required_fields: false
+    group_2_5_citizens_redress_and_f:
+      children:
+        - field_citi_change_dec
+        - field_citi_change_dec_ev
+        - field_citi_feedback
+        - field_citi_feedback_ev
+      label: '2.5 Citizens redress and feedback mechanisms'
+      region: content
+      parent_name: group_2_user_centricity_performa
+      weight: 39
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: true
+        id: ''
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: label-dash2
+        attributes: ''
+        effect: none
+        speed: fast
+        required_fields: false
+    group_3_1_adoption:
+      children:
+        - field_ado_transact
+        - field_ado_transact_ev
+        - field_ado_publicdata
+        - field_ado_publicdata_ev
+      label: '3.1 Adoption'
+      region: content
+      parent_name: group_3_outcome
+      weight: 80
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: true
+        id: ''
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: label-dash2
+        attributes: ''
+        effect: none
+        speed: fast
+        required_fields: false
+    group_3_2_reduction_of_burden:
+      children:
+        - field_redu_timesaved
+        - field_redu_timesaved_ev
+        - field_redu_financesaved
+        - field_redu_financesaved_ev
+      label: '3.2 Reduction of burden'
+      region: content
+      parent_name: group_3_outcome
+      weight: 81
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: true
+        id: ''
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: label-dash2
+        attributes: ''
+        effect: none
+        speed: fast
+        required_fields: false
+    group_3_3_satisfaction:
+      children:
+        - field_sati_servprovision
+        - field_sati_servprovision_ev
+        - field_sati_share2y
+        - field_sati_share2y_ev
+      label: '3.3 Satisfaction'
+      region: content
+      parent_name: group_3_outcome
+      weight: 82
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: true
+        id: ''
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: label-dash2
+        attributes: ''
+        effect: none
+        speed: fast
+        required_fields: false
+    group_2_6_interoperability:
+      children:
+        - field_inter_onceonly
+        - field_inter_onceonly_ev
+        - field_inter_stdprocure
+        - field_inter_stdprocure_ev
+        - field_inter_opensrc
+        - field_inter_opensrc_ev
+      label: '2.6 - Interoperability'
+      region: content
+      parent_name: group_2_user_centricity_performa
+      weight: 40
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: true
+        id: ''
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: label-dash2
+        attributes: ''
+        effect: none
+        speed: fast
+        required_fields: true
+id: node.ucservice.default
+targetEntityType: node
+bundle: ucservice
+mode: default
+content:
+  field_00__total_population:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_00_total_budget:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_00_total_number_emp:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_ado_publicdata:
+    type: options_buttons
+    weight: 109
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_ado_publicdata_ev:
+    type: string_textarea
+    weight: 110
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        0fd8b795-b327-491a-9739-fcc9c78cb7f2:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_ado_publicdata
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        3bff6b6f-a8a4-463d-90a7-50ad99e115f3:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_ado_publicdata
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_ado_transact:
+    type: options_buttons
+    weight: 106
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_ado_transact_ev:
+    type: string_textarea
+    weight: 107
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        42618932-1b7a-49e6-aec9-d2eecd3029c6:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_ado_transact
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        feb5bdda-ad62-4143-b5d1-d535964ad220:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_ado_transact
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_citi_change_dec:
+    type: options_buttons
+    weight: 70
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_citi_change_dec_ev:
+    type: string_textarea
+    weight: 71
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        b7e134c3-d7ec-4aef-a640-8c53079cbf62:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_citi_change_dec
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        d8aea1c8-d227-435d-9cdc-46204c08683e:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_citi_change_dec
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_citi_feedback:
+    type: options_buttons
+    weight: 73
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_citi_feedback_ev:
+    type: string_textarea
+    weight: 74
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        0cab70c7-ca51-4620-b394-c22ad65dafea:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_citi_feedback
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        c2b5f8ac-6e79-49a1-9b0a-b0e0ad5fd5bf:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_citi_feedback
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_co_codesign:
+    type: options_buttons
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_co_codesign_dis:
+    type: options_buttons
+    weight: 54
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_co_codesign_dis_ev:
+    type: string_textarea
+    weight: 55
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        7f9f5ea3-5547-43ba-a9c6-50be214e0dca:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_co_codesign_dis
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        5a41b4a7-5464-491d-b715-8be6abf4565f:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_co_codesign_dis
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_co_codesign_ev:
+    type: string_textarea
+    weight: 51
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        8ae26f55-e032-466e-94e6-8369fde8d4d8:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_co_codesign
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        93d68b50-09c4-4470-afc5-628949a1f531:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_co_codesign
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_co_plan_regrelease:
+    type: options_buttons
+    weight: 58
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_co_plan_regrelease_ev:
+    type: string_textarea
+    weight: 59
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        98801321-388a-4ec1-a729-32546f80344f:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_co_plan_regrelease
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        5a020c32-a6df-4bb0-9a6d-f3c841b6dd38:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_co_plan_regrelease
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_co_userresearch:
+    type: options_buttons
+    weight: 52
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_co_userresearch_ev:
+    type: string_textarea
+    weight: 53
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        678c596a-59fb-4d45-a36e-107c4fc3427e:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_co_userresearch
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        00b79723-9204-44ce-9214-e6b082bfa6a2:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_co_userresearch
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_co_webanalitycs:
+    type: options_buttons
+    weight: 56
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_co_webanalitycs_ev:
+    type: string_textarea
+    weight: 57
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        80f86cc1-25a7-4b51-bb6e-066b1e1fd7e6:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_co_webanalitycs
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        d0d5abbe-03dd-4df1-98c3-fc34125807bd:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_co_webanalitycs
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_eco_api:
+    type: options_buttons
+    weight: 60
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_eco_api_ev:
+    type: string_textarea
+    weight: 61
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        3bd69df5-9830-44fa-82af-8e5025f8fc5a:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_eco_api
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        465d1d7e-b523-4583-8a65-2214adc99d9d:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_eco_api
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_eco_collaboration:
+    type: options_buttons
+    weight: 64
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_eco_collaboration_ev:
+    type: string_textarea
+    weight: 66
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        dc19b7d1-82a8-442c-8bf6-af8cb37e947b:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_eco_collaboration
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        36e64223-ed4e-4822-92cc-8279267379af:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_eco_collaboration
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_eco_eid:
+    type: options_buttons
+    weight: 62
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_eco_eid_ev:
+    type: string_textarea
+    weight: 63
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        681b04b8-702d-48f7-9ce4-7e4a12e01600:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_eco_eid
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        a499e10a-1271-45ad-98bd-9efb2de7e8b5:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_eco_eid
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_inter_onceonly:
+    type: options_buttons
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_inter_onceonly_ev:
+    type: string_textarea
+    weight: 10
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        66df69db-8300-462b-8447-fe54b7f66b12:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_inter_onceonly
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        d1d40592-55a0-4643-aa3c-138b0802ff72:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_inter_onceonly
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_inter_opensrc:
+    type: options_buttons
+    weight: 14
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_inter_opensrc_ev:
+    type: string_textarea
+    weight: 15
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        66c40f62-eea6-4728-9019-ae525c9690f7:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_inter_opensrc
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        19b224d2-5a8d-44e5-8e13-758f28860e4e:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_inter_opensrc
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_inter_stdprocure:
+    type: options_buttons
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_inter_stdprocure_ev:
+    type: string_textarea
+    weight: 13
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        201c845a-545a-445c-9d41-7a16a7e78f0d:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_inter_stdprocure
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        ab95bb18-372c-47fb-a15b-96f6b583f73a:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_inter_stdprocure
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_redu_financesaved:
+    type: options_buttons
+    weight: 16
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_redu_financesaved_ev:
+    type: string_textarea
+    weight: 18
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        eec51af9-301c-40ab-ac9f-f10386419421:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_redu_financesaved
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        a0afa100-c5d3-4e4b-afc4-f301f754ecc4:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_redu_financesaved
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_redu_timesaved:
+    type: options_buttons
+    weight: 14
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_redu_timesaved_ev:
+    type: string_textarea
+    weight: 15
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        98710d51-1aa5-454c-ba30-fc052ce9f293:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_redu_timesaved
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        0001e36c-57d4-47a5-941f-d0abebd4c5f0:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_redu_timesaved
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_sati_servprovision:
+    type: options_buttons
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_sati_servprovision_ev:
+    type: string_textarea
+    weight: 9
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        8f018220-cb15-41fc-8953-06ff1755e83d:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_sati_servprovision
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        4d3be325-68af-4510-80fa-ace40310fb42:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_sati_servprovision
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_sati_share2y:
+    type: options_buttons
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_sati_share2y_ev:
+    type: string_textarea
+    weight: 12
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        0aefc810-dc7d-4099-8ca2-52da5f2a0752:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_sati_share2y
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        731524fd-0822-4c8d-a08b-ad848251ea97:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_sati_share2y
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_sec_control_data:
+    type: options_buttons
+    weight: 68
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_sec_control_data_ev:
+    type: string_textarea
+    weight: 69
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        32480fac-c85e-46ea-befe-014e535d45a1:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_sec_control_data
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        ece844e7-8d21-4ebf-b074-5dc9db7468d2:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_sec_control_data
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_sec_eid:
+    type: options_buttons
+    weight: 66
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_sec_eid_ev:
+    type: string_textarea
+    weight: 67
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        fc30b335-b13d-4163-bd40-56fd13ceca51:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_sec_eid
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        11d475ef-9238-470b-a33c-38e86a566959:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_sec_eid
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_sec_procedure:
+    type: options_buttons
+    weight: 70
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_sec_procedure_ev:
+    type: string_textarea
+    weight: 71
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        17eb48f7-11ad-4fcc-82bc-3dddb097d694:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_sec_procedure
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        068b5e4a-01d7-4005-a3ce-94644f4b6d9b:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_sec_procedure
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_sk_how_many_ict_specialist:
+    type: number
+    weight: 7
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_sk_ict_subcontractors:
+    type: number
+    weight: 8
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_sk_locauth_pos_serv_des:
+    type: options_buttons
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_sk_locauth_pos_serv_des_ev:
+    type: string_textarea
+    weight: 31
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        3ef45bab-8c46-4923-a02b-5be243f675f2:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_sk_locauth_pos_serv_des
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        13c9b2b4-950a-4dbd-bf7f-090dbb67fa20:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_sk_locauth_pos_serv_des
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_sk_locauth_train_dscs:
+    type: options_buttons
+    weight: 36
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_sk_locauth_train_dscs_ev:
+    type: string_textarea
+    weight: 37
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        3b6bf4be-3789-4632-af61-3c4596aa2512:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_sk_locauth_train_dscs
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        37dcd466-9d6b-439e-ae60-47a023128c62:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_sk_locauth_train_dscs
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_sk_locauth_training_cit:
+    type: options_buttons
+    weight: 38
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_sk_locauth_training_cit_ev:
+    type: string_textarea
+    weight: 39
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        365ec95b-bed3-454a-a4d5-0081b70fc59f:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_sk_locauth_training_cit
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        0d39100d-6471-424e-be9b-0d0b0bf2d3b2:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_sk_locauth_training_cit
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_sk_locauth_training_cs:
+    type: options_buttons
+    weight: 34
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_sk_locauth_training_cs_ev:
+    type: string_textarea
+    weight: 35
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        7dc570db-f3bd-47f3-940c-b21ca74872d0:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_sk_locauth_training_cs
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        66d3134d-894e-4813-8593-fa40df88e143:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_sk_locauth_training_cs
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_st_localauth_cdo:
+    type: options_buttons
+    weight: 94
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_st_localauth_cdo_ev:
+    type: string_textarea
+    weight: 95
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        fb1896f3-7cfc-42be-b997-9905a8f29f94:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_st_localauth_cdo
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        c1f38571-f1b0-48cd-97cb-9d444fe97398:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_st_localauth_cdo
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_st_localauth_digitstra:
+    type: options_buttons
+    weight: 92
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_st_localauth_digitstra_ev:
+    type: string_textarea
+    weight: 93
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        b48ecd02-7a56-4ccb-9614-44ebeaf621b7:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_st_localauth_digitstra
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        e5fb80cf-db13-468c-a305-a599cf0ff677:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_st_localauth_digitstra
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_st_localauth_serv_guid:
+    type: options_buttons
+    weight: 98
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_st_localauth_serv_guid_ev:
+    type: string_textarea
+    weight: 99
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        017e36ce-d3c7-452a-abea-51cf05181c0c:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_st_localauth_serv_guid
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        2e64f3f7-3c52-48e3-953a-8b03e2484594:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_st_localauth_serv_guid
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_st_localauth_serv_stand:
+    type: options_buttons
+    weight: 96
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_st_localauth_serv_stand_ev:
+    type: string_textarea
+    weight: 97
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        8894b0b3-43d8-4765-8bd5-0fc077425e29:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_st_localauth_serv_stand
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        fa82a526-ca2d-48dd-b480-b54ca9bb1980:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_st_localauth_serv_stand
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_st_locaut_serv_guid_mon:
+    type: options_buttons
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_st_locaut_serv_guid_mon_ev:
+    type: string_textarea
+    weight: 101
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        0333689b-e299-4c9b-9fc4-76c3b89f8710:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_st_locaut_serv_guid_mon
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        339abe62-72bd-485c-b236-c7008ab6082c:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_st_locaut_serv_guid_mon
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_st_strat_mention_design:
+    type: options_buttons
+    weight: 103
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_st_strat_mention_design_ev:
+    type: string_textarea
+    weight: 104
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        730acd14-c882-4519-b06b-6ceea78c6443:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_st_strat_mention_design
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        ca799aed-1820-486f-a7ab-da78be8e28b9:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_st_strat_mention_design
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_sup_auth_app:
+    type: options_buttons
+    weight: 73
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_sup_auth_app_ev:
+    type: string_textarea
+    weight: 74
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        7c890d81-fe56-4d08-ba8d-fd334a72d551:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_sup_auth_app
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        9d2da187-bdc8-42d5-a580-b67c131832d3:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_sup_auth_app
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_sup_auth_checkproc:
+    type: options_buttons
+    weight: 79
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_sup_auth_checkproc_ev:
+    type: string_textarea
+    weight: 80
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        c1fa4437-6ed1-4c1c-b526-5ab30bbecd64:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_sup_auth_checkproc
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        72f168e1-6b04-429e-b160-a98201665610:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_sup_auth_checkproc
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_sup_auth_proactive:
+    type: options_buttons
+    weight: 75
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_sup_auth_proactive_ev:
+    type: string_textarea
+    weight: 76
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        90fda99e-72f8-4eb5-ad92-23c4360efec1:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_sup_auth_proactive
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        6d2f5049-e865-46a2-a841-6f01c525e412:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_sup_auth_proactive
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_sup_auth_sdg:
+    type: options_buttons
+    weight: 77
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_sup_auth_sdg_ev:
+    type: string_textarea
+    weight: 78
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        cd9172b4-23b5-4895-a13a-b46659a6e669:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_sup_auth_sdg
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        6c34d64d-2f6b-43be-98e4-c667b99d0987:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_sup_auth_sdg
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_sup_loc_auth:
+    type: options_buttons
+    weight: 71
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_sup_loc_auth_ev:
+    type: string_textarea
+    weight: 72
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        a09cbceb-e454-4365-a765-65e0835341df:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_sup_loc_auth
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        95144e90-11fd-438e-a61e-cbd2e7991258:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_sup_loc_auth
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_usa_auth_assessment:
+    type: options_buttons
+    weight: 120
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_usa_auth_assessment_ev:
+    type: string_textarea
+    weight: 121
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        b98212ed-cf1f-4cd6-a18e-73ae54101972:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_usa_auth_assessment
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        fd13ac82-481f-4501-99f1-b9ef5f40610a:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_usa_auth_assessment
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_usa_web_audiovideo:
+    type: options_buttons
+    weight: 116
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_usa_web_audiovideo_ev:
+    type: string_textarea
+    weight: 117
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: null
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+        maxlength_js_enforce: false
+        maxlength_js_truncate_html: false
+      advanced_text_formatter:
+        show_token_tree: 0
+      conditional_fields:
+        2dc1c0cc-b328-49a5-b4ae-0ff8a5683c9d:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_usa_web_audiovideo
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        6b4ac696-ef36-4ca1-841b-a3b42df2627b:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_usa_web_audiovideo
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_usa_web_look:
+    type: options_buttons
+    weight: 113
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_usa_web_look_ev:
+    type: string_textarea
+    weight: 114
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        1468d508-f3b4-4739-b776-f60fe0942fc8:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_usa_web_look
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        eb88cc74-7169-4d44-96f9-4b030874e97e:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_usa_web_look
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_usa_web_wcag:
+    type: options_buttons
+    weight: 118
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_usa_web_wcag_ev:
+    type: string_textarea
+    weight: 119
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        ed2f8d3d-ee24-4461-bce0-4c6cd7581668:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_usa_web_wcag
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+        213815b8-dc2b-49a4-a2e3-64f1373aa325:
+          entity_type: node
+          bundle: ucservice
+          dependee: field_usa_web_wcag
+          settings:
+            state: required
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: 'Yes'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  path:
+    type: path
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 6
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_0_total_budget: true
+  field_0_total_number_employees_: true
+  field_0_total_population: true
+  field_eco_api_howmany: true
+  field_env_co2: true
+  field_env_co2_ev: true
+  field_sk_locauth_pos_serv_design: true
+  field_sk_locauth_training_ds_cs: true
+  field_sk_locauth_training_ds_cse: true
+  field_st_localauth_digitstrategy: true
+  field_st_localauth_serv_guide_mo: true
+  field_st_localauth_service_guide: true
+  field_st_localauth_service_stand: true
+  field_st_strategy_mention_design: true
+  promote: true
+  sticky: true

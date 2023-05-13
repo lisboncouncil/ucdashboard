@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.ucservice
+  module:
+    - node
+    - workbench_moderation
+id: city_metric_editor
+label: 'City metric editor'
+weight: 0
+is_admin: null

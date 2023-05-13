@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sati_servprovision
+    - node.type.ucservice
+  module:
+    - options
+id: node.ucservice.field_sati_servprovision
+field_name: field_sati_servprovision
+entity_type: node
+bundle: ucservice
+label: 'Does the local authority measure the citizens’ level of satisfaction with regards to the services’ provision?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

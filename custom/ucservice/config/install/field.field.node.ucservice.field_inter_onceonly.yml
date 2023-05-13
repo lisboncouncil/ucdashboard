@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_inter_onceonly
+    - node.type.ucservice
+  module:
+    - options
+id: node.ucservice.field_inter_onceonly
+field_name: field_inter_onceonly
+entity_type: node
+bundle: ucservice
+label: 'Does the local authority apply the once-only principle in its services, so that citizens are not required to submit documents already held by the administration?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

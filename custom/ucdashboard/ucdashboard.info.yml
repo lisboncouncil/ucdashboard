@@ -1,0 +1,11 @@
+name: UccsDashboard
+type: module
+description: Dashboard for the User-centricities Services
+package: UCCs
+core_version_requirement: ^9 | ^10
+dependencies:
+  - drupal:node
+  - uccs:highcharts
+  - ucservice:ucservice
+libraries:
+  - ucdashboard/ucdashboard
