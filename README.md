@@ -41,7 +41,7 @@ The Highcharts is a simple wrapper for the well known library.
 
 In the /modules page you will see something link this: 
 
-![image-20230513162253627](./doc-img/image-20230513162253627.png?raw=true)
+![image-20230513162253627](./doc-images/image-20230513162253627.png?raw=true)
 
 First of all, you have to install the dependencies.
 
