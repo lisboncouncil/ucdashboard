@@ -127,7 +127,7 @@ Here you can find some variables:
 
 the **show_percentage** variables show (or hide) the percentages near to the name of the city. 
 
-![image-20230513182230950](./doc-images/image-20230513182230950.png) 
+![image-20230513182230950](./doc-images/image-20230513182230950.png?raw=true) 
 
 
 
@@ -137,7 +137,7 @@ In each revision you have the schema of the indicators that concur to the score 
 
 In the provided file you have two revisions:
 
-![image-20230513182422403](./doc-images/image-20230513182422403.png)
+![image-20230513182422403](./doc-images/image-20230513182422403.png?raw=true)
 
 The first is the default (2023) and the last revision of the nodes are shown.
 
